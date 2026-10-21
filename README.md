@@ -53,7 +53,7 @@ New-Item -ItemType Directory -Force ".claude\skills" | Out-Null
 tar -xf cycling-coach-skill.skill -C ".claude\skills"
 ```
 
-The `New-Item` lines are not optional: `tar -C` exits with a usage message if the destination does not exist yet. Renaming the file to `.zip` and using `Expand-Archive` also works, and creates the destination folder for you. Use `%USERPROFILE%` in `cmd.exe`; `~` is not expanded there.
+The `New-Item` lines are not optional: `tar -C` fails with `could not chdir` if the destination does not exist yet. Renaming the file to `.zip` and using `Expand-Archive` also works, and creates the destination folder for you. Use `%USERPROFILE%` in `cmd.exe`; `~` is not expanded there.
 
 Check that `.claude/skills/cycling-coach-skill/SKILL.md` exists, with `SKILL.md` directly inside that folder. A GUI "Extract All" that makes a folder named after the archive puts the files one level too deep, at `cycling-coach-skill/cycling-coach-skill/SKILL.md`, where the loader will not find them.
 
