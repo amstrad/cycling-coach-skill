@@ -1,6 +1,6 @@
 {
   "name": "cycling-coach-skill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "description": "An agent skill that plans cycling and running training weeks like a professional coach, with machine-readable rules and a week validator.",
   "type": "module",

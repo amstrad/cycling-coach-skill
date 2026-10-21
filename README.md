@@ -32,12 +32,30 @@ The main rules include:
 
 Download `cycling-coach-skill.skill` from the [latest release](https://github.com/amstrad/cycling-coach-skill/releases/latest). It is a zip archive with one `cycling-coach-skill/` folder inside. The folder name must stay as it is, because it has to match the skill's name.
 
+If a skill does not appear after installing, it is almost always a folder too deep. The loader needs `SKILL.md` directly inside a directory whose name matches the `name:` in its frontmatter.
+
 ### Claude Code
 
 ```bash
 unzip cycling-coach-skill.skill -d ~/.claude/skills/     # for you, in every project
 unzip cycling-coach-skill.skill -d .claude/skills/       # or for one project only
 ```
+
+On Windows, `unzip` is not installed by default, and `Expand-Archive` rejects the `.skill` extension. The `tar` that ships with Windows 10 1803 and later reads it:
+
+```powershell
+# for you, in every project
+New-Item -ItemType Directory -Force "$env:USERPROFILE\.claude\skills" | Out-Null
+tar -xf cycling-coach-skill.skill -C "$env:USERPROFILE\.claude\skills"
+
+# or for one project only
+New-Item -ItemType Directory -Force ".claude\skills" | Out-Null
+tar -xf cycling-coach-skill.skill -C ".claude\skills"
+```
+
+The `New-Item` lines are not optional: `tar -C` exits with a usage message if the destination does not exist yet. Renaming the file to `.zip` and using `Expand-Archive` also works, and creates the destination folder for you. Use `%USERPROFILE%` in `cmd.exe`; `~` is not expanded there.
+
+Check that `.claude/skills/cycling-coach-skill/SKILL.md` exists, with `SKILL.md` directly inside that folder. A GUI "Extract All" that makes a folder named after the archive puts the files one level too deep, at `cycling-coach-skill/cycling-coach-skill/SKILL.md`, where the loader will not find them.
 
 Start a new session. The skill appears as `/cycling-coach-skill`.
 

@@ -5,7 +5,7 @@ license: MIT
 compatibility: Works in any agent that supports Agent Skills (SKILL.md). Needs file read/write for the profile and outputs. Node.js 18+ is optional, for the bundled week validator. Network access or connectors are optional, for Intervals.icu, Strava, or a pasted Garmin export.
 metadata:
   author: Diego Garcia
-  version: 1.0.0
+  version: 1.0.1
   hermes:
     tags: [cycling, running, marathon, training-plan, endurance, coaching, zwift, intervals-icu, strava, garmin]
     category: fitness

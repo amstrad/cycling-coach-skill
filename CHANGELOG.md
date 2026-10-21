@@ -2,6 +2,13 @@
 
 Notable changes are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] - 2026-10-21
+
+### Documentation
+
+- Windows install instructions for Claude Code, using the `tar` bundled with Windows, since `unzip` is not installed by default and `Expand-Archive` rejects the `.skill` extension.
+- Install now names the folder `SKILL.md` must sit in, and the "folder too deep" layout a GUI extract can produce.
+
 ## [1.0.0] - 2026-10-21
 
 First public release.
