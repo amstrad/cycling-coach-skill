@@ -1,0 +1,43 @@
+{
+  "language": "en",
+  "units": "metric",
+  "voiceGuidelines": "",
+  "goalWkg": null,
+  "openDays": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+  ],
+  "usualDurationMin": 60,
+  "targetedSessionCap": 2,
+  "gymDefault": "core",
+  "powerProfileOverride": null,
+  "exportFormat": "zwo",
+  "intervalsAthleteId": null,
+  "publishToIntervals": "ask",
+  "level": "beginner",
+  "eventType": null,
+  "eventDate": null,
+  "thresholdPaceSecPerKm": null,
+  "lthr": null,
+  "maxHr": null,
+  "weeklyKm": null,
+  "trainingState": null,
+  "constraints": [],
+  "name": "Alex",
+  "sport": "cycling",
+  "objective": "Ride a 60 km club ride without being dropped",
+  "age": 34,
+  "gender": "female",
+  "weightKg": 64,
+  "baselineFtp": 165,
+  "socialDays": [
+    "Sat"
+  ],
+  "trainingAgeYears": 0.5,
+  "weeklyHours": 4
+}

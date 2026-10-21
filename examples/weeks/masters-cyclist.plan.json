@@ -1,0 +1,121 @@
+{
+  "week": "2026-W44",
+  "profile": "../profiles/masters-cyclist.json",
+  "phase": "build",
+  "weekType": "build",
+  "block": {
+    "index": 1,
+    "type": "2:1",
+    "week": 2
+  },
+  "powerProfile": "balanced",
+  "previousWeek": {
+    "tss": 350,
+    "weekType": "build",
+    "patternSteps": {
+      "40-20s": 1,
+      "oscillating-threshold": 1
+    },
+    "lastDays": [
+      {
+        "day": "Fri",
+        "sessions": [
+          {
+            "pattern": "oscillating-threshold",
+            "step": 1,
+            "durationMin": 40
+          }
+        ]
+      },
+      {
+        "day": "Sat",
+        "sessions": [
+          {
+            "pattern": "social-ride",
+            "durationMin": 120
+          }
+        ]
+      },
+      {
+        "day": "Sun",
+        "sessions": [
+          {
+            "pattern": "long-ride",
+            "durationMin": 150
+          }
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "40-20s",
+          "step": 2,
+          "durationMin": 57
+        },
+        {
+          "pattern": "strength"
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 60
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "oscillating-threshold",
+          "step": 2,
+          "durationMin": 50
+        },
+        {
+          "pattern": "strength"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "social-ride",
+          "durationMin": 120
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "long-ride",
+          "durationMin": 150
+        }
+      ]
+    }
+  ]
+}

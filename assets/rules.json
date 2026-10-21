@@ -1,0 +1,210 @@
+{
+  "version": "1.0.0",
+  "description": "Machine-readable mirror of the planning numbers in references/. When a guide changes, change this file too; npm test checks both against the examples.",
+
+  "classes": {
+    "rest": "No training.",
+    "easy": "Z1-Z2 only (cycling <= 70% FTP), strides or spin-ups allowed.",
+    "threshold": "Threshold-type key session: tempo, sub-threshold, threshold, over-unders, low-cadence force, marathon pace.",
+    "hi": "High-intensity key session: >= 106% FTP or 10k pace and faster.",
+    "neuro": "Very short maximal efforts with full recovery (sprints, torque starts). Not a hard day; keep off fatigued legs.",
+    "long": "Long aerobic day. Becomes a hard day above the sport's long-day threshold.",
+    "social": "Group ride at the group's pace. Hard only when flagged hard.",
+    "race": "Race. Always a hard day.",
+    "test": "Benchmark test. Always a hard day.",
+    "strength": "Heavy lower-body gym. Placement rule only, not a hard day.",
+    "core": "Core or mobility. No placement limits."
+  },
+
+  "hardDayThresholds": {
+    "longRideMin": 180,
+    "longRunMin": 90
+  },
+
+  "sessions": {
+    "rest":                  { "sport": "any",  "class": "rest",      "tss": 0 },
+    "recovery-spin":         { "sport": "bike", "class": "easy",      "tssPerHour": 30 },
+    "aerobic-base":          { "sport": "bike", "class": "easy",      "tssPerHour": 42 },
+    "long-ride":             { "sport": "bike", "class": "long",      "tssPerHour": 42 },
+    "social-ride":           { "sport": "bike", "class": "social",    "tssPerHour": 45, "tssPerHourHard": 65 },
+    "tempo":                 { "sport": "bike", "class": "threshold", "tss": [60, 75, 85],  "durationMin": [70, 90, 90] },
+    "sub-threshold":         { "sport": "bike", "class": "threshold", "tss": [70, 75, 85],  "durationMin": [65, 65, 75] },
+    "threshold":             { "sport": "bike", "class": "threshold", "tss": [75, 85, 90],  "durationMin": [60, 70, 75] },
+    "oscillating-threshold": { "sport": "bike", "class": "threshold", "tss": [55, 65, 75],  "durationMin": [40, 50, 60] },
+    "low-cadence-force":     { "sport": "bike", "class": "threshold", "tss": [55, 60, 65],  "durationMin": [55, 60, 65] },
+    "aerobic-ceiling":       { "sport": "bike", "class": "hi",        "tss": [70, 75, 80],  "durationMin": [57, 65, 65] },
+    "30-15s":                { "sport": "bike", "class": "hi",        "tss": [60, 75, 80],  "durationMin": [47, 60, 60] },
+    "40-20s":                { "sport": "bike", "class": "hi",        "tss": [65, 70, 85],  "durationMin": [55, 57, 65] },
+    "shrinking-ladder":      { "sport": "bike", "class": "hi",        "tss": [55, 70, 75],  "durationMin": [50, 65, 62] },
+    "race-simulation":       { "sport": "bike", "class": "hi",        "tss": [150, 160, 170], "durationMin": [150, 165, 180] },
+    "sprints":               { "sport": "bike", "class": "neuro",     "tss": [30, 35, 40],  "durationMin": [45, 50, 55] },
+    "torque-starts":         { "sport": "bike", "class": "neuro",     "tss": [30, 35, 40],  "durationMin": [45, 50, 55] },
+    "ftp-test":              { "sport": "bike", "class": "test",      "tss": 75, "durationMin": 60 },
+
+    "easy-run":              { "sport": "run",  "class": "easy",      "tssPerHour": 55 },
+    "long-run":              { "sport": "run",  "class": "long",      "tssPerHour": 58 },
+    "cruise-intervals":      { "sport": "run",  "class": "threshold", "tss": [65, 70, 75],  "durationMin": [50, 55, 60] },
+    "threshold-tempo":       { "sport": "run",  "class": "threshold", "tss": [60, 70, 80],  "durationMin": [45, 50, 60] },
+    "progression-run":       { "sport": "run",  "class": "threshold", "tss": [50, 60, 75],  "durationMin": [40, 50, 60] },
+    "mp-tempo":              { "sport": "run",  "class": "threshold", "tss": [75, 85, 105], "durationMin": [65, 65, 90] },
+    "fartlek":               { "sport": "run",  "class": "threshold", "tss": [50, 55, 60],  "durationMin": [40, 45, 45] },
+    "vo2-reps":              { "sport": "run",  "class": "hi",        "tss": [65, 75, 80],  "durationMin": [50, 55, 60], "intensityCap": "vo2" },
+    "10k-pace-reps":         { "sport": "run",  "class": "hi",        "tss": [70, 80, 85],  "durationMin": [55, 60, 65], "intensityCap": "tenK" },
+    "hill-reps":             { "sport": "run",  "class": "hi",        "tss": [55, 60, 70],  "durationMin": [45, 50, 55], "impact": true },
+    "race-simulation-run":   { "sport": "run",  "class": "hi",        "tss": 85, "durationMin": 60 },
+    "run-test":              { "sport": "run",  "class": "test",      "tss": 70, "durationMin": 55 },
+
+    "race":                  { "sport": "any",  "class": "race" },
+    "strength":              { "sport": "gym",  "class": "strength",  "tss": 0 },
+    "plyometrics":           { "sport": "gym",  "class": "strength",  "tss": 0, "impact": true },
+    "core":                  { "sport": "gym",  "class": "core",      "tss": 0 }
+  },
+
+  "rotation": {
+    "cycling": {
+      "explosive": [["sub-threshold", "oscillating-threshold"], ["30-15s", "threshold"], ["aerobic-ceiling", "sub-threshold"]],
+      "balanced":  [["30-15s", "sub-threshold"], ["40-20s", "oscillating-threshold"], ["aerobic-ceiling", "threshold"]],
+      "steady":    [["30-15s", "threshold"], ["40-20s", "sub-threshold"], ["aerobic-ceiling", "oscillating-threshold"]]
+    },
+    "running": {
+      "5k":            [["vo2-reps", "cruise-intervals"], ["hill-reps", "threshold-tempo"], ["vo2-reps", "fartlek"]],
+      "10k":           [["10k-pace-reps", "cruise-intervals"], ["cruise-intervals", "progression-run"], ["vo2-reps", "threshold-tempo"]],
+      "half-marathon": [["cruise-intervals", "long-run"], ["threshold-tempo", "long-run"], ["10k-pace-reps", "long-run"]],
+      "marathon":      [["threshold-tempo", "long-run"], ["cruise-intervals", "long-run"], ["mp-tempo", "long-run"]]
+    }
+  },
+
+  "progression": {
+    "maxStep": 3,
+    "stepByBlockWeek": { "3:1": [1, 2, 3], "2:1": [1, 2], "2:1-advanced": [2, 3] },
+    "maxBlockWeeksBeforeDeload": 5,
+    "deloadRepsFactor": 0.67
+  },
+
+  "age": [
+    { "id": "under-30", "minAge": 18, "maxAge": 29, "maxHardDays": 3, "maxConsecutiveHard": 2, "minGapHardToHard": 1, "minGapHiToHi": 2, "minGapHiToHard": 1, "blockType": "3:1", "strengthPerWeek": 1, "warmupMin": 10 },
+    { "id": "30-39",    "minAge": 30, "maxAge": 39, "maxHardDays": 3, "maxConsecutiveHard": 2, "minGapHardToHard": 1, "minGapHiToHi": 2, "minGapHiToHard": 1, "blockType": "3:1", "strengthPerWeek": 1, "warmupMin": 12 },
+    { "id": "40-49",    "minAge": 40, "maxAge": 49, "maxHardDays": 2, "maxConsecutiveHard": 1, "minGapHardToHard": 2, "minGapHiToHi": 3, "minGapHiToHard": 2, "blockType": "3:1", "strengthPerWeek": 2, "warmupMin": 15 },
+    { "id": "50-59",    "minAge": 50, "maxAge": 59, "maxHardDays": 2, "maxConsecutiveHard": 1, "minGapHardToHard": 2, "minGapHiToHi": 3, "minGapHiToHard": 3, "blockType": "2:1", "strengthPerWeek": 2, "warmupMin": 18 },
+    { "id": "60-plus",  "minAge": 60, "maxAge": 120, "maxHardDays": 2, "maxConsecutiveHard": 1, "minGapHardToHard": 3, "minGapHiToHi": 3, "minGapHiToHard": 3, "blockType": "2:1", "strengthPerWeek": 2, "warmupMin": 20 }
+  ],
+
+  "levels": {
+    "beginner":     { "maxKeySessions": 1, "maxHi": 1, "peakMaxHi": 1, "noHiBeforeConsistentWeeks": 8, "maxHardDays": 2, "weeklyHours": [3, 6],  "weeklyKm": [15, 30], "longRideMaxMin": 120, "longRunMaxMin": 75,  "rampPct": 8,  "blockType": "2:1", "needsRestDay": true },
+    "intermediate": { "maxKeySessions": 2, "maxHi": 1, "peakMaxHi": 2, "maxHardDays": 3, "weeklyHours": [6, 10], "weeklyKm": [30, 55], "longRideMaxMin": 210, "longRunMaxMin": 150, "rampPct": 10, "blockType": "3:1", "needsRestDay": true },
+    "advanced":     { "maxKeySessions": 2, "maxHi": 1, "peakMaxHi": 2, "hiBlockMaxHi": 3, "hiBlockMaxAge": 39, "maxHardDays": 4, "weeklyHours": [10, 15], "weeklyKm": [55, 90], "longRideMaxMin": 300, "longRunMaxMin": 180, "rampPct": 10, "blockType": "3:1", "needsRestDay": false }
+  },
+
+  "levelScore": {
+    "trainingAgeYears": [1, 3, 6],
+    "weeklyHours": [4, 7, 11],
+    "consistentWeeksOf8": [3, 5, 7],
+    "bands": { "beginner": [0, 3], "intermediate": [4, 7], "advanced": [8, 12] }
+  },
+
+  "load": {
+    "weeklyTss": {
+      "beginner":     { "build": [200, 350], "deload": [120, 200] },
+      "intermediate": { "build": [350, 550], "deload": [200, 300] },
+      "advanced":     { "build": [550, 800], "deload": [300, 450] }
+    },
+    "rampMaxPct": 10,
+    "rampTolerancePct": 2,
+    "deloadFactor": [0.55, 0.65],
+    "ctlRampPerWeek": { "sustained": [3, 5], "maxShortTerm": 7 },
+    "acwr": { "low": 0.7, "optimalMax": 1.3, "cautionMax": 1.5 },
+    "tsbKeySessionMin": -20,
+    "tsbOverreach": -30,
+    "raceTsb": [5, 25]
+  },
+
+  "pushHold": {
+    "keySessionCompletionPct": 95,
+    "failedRepPct": 90,
+    "sleepHours": { "push": 7, "stepDown": 6 },
+    "acwrPush": [0.8, 1.2],
+    "acwrHoldMax": 1.3,
+    "stepDownRowsToStepDown": 2,
+    "stepDownRowsToDeload": 3
+  },
+
+  "readinessOverride": {
+    "trainingReadinessBelow": 40,
+    "hrvStatus": ["low"],
+    "sleepHoursBelow": 6,
+    "restingHrAboveBaselineBpm": 5,
+    "hrvBelowWeekMeanPct": 10
+  },
+
+  "intensityDistribution": [
+    { "maxWeeklyHours": 6,  "easyPct": [65, 75], "thresholdPct": [15, 25], "hiPct": [5, 10] },
+    { "maxWeeklyHours": 10, "easyPct": [75, 80], "thresholdPct": [10, 15], "hiPct": [5, 10] },
+    { "maxWeeklyHours": 99, "easyPct": [80, 85], "thresholdPct": [8, 12],  "hiPct": [5, 8] }
+  ],
+
+  "running": {
+    "maxHardRunDays": 2,
+    "rampMaxPct": 10,
+    "longRunMaxShare": { "default": 0.30, "marathon": 0.40, "marathonPeak": 0.45 },
+    "longRunMaxMin": 180,
+    "perSessionCapShare": { "threshold": 0.10, "tenK": 0.12, "vo2": 0.08, "speed": 0.05 },
+    "vo2MaxKm": 10,
+    "weeklyQualityMaxShare": 0.20
+  },
+
+  "taper": {
+    "criterium":     { "days": [7, 10],  "volumeCutPct": 40 },
+    "5k":            { "days": [7, 10],  "volumeCutPct": 40 },
+    "10k":           { "days": [7, 10],  "volumeCutPct": 40 },
+    "road-race":     { "days": [10, 14], "volumeCutPct": [40, 50] },
+    "time-trial":    { "days": [10, 14], "volumeCutPct": [40, 50] },
+    "climb":         { "days": [10, 14], "volumeCutPct": [40, 50] },
+    "half-marathon": { "days": [10, 14], "volumeCutPct": [40, 50] },
+    "gran-fondo":    { "days": [14, 21], "volumeCutPct": [50, 60], "note": "10-14 days when the event is under 4 h" },
+    "marathon":      { "days": [14, 21], "volumeCutPct": [50, 60] },
+    "ageExtraDays":  { "minAge": 50, "days": [3, 4] }
+  },
+
+  "phases": {
+    "order": ["base", "build", "peak", "taper", "race-week"],
+    "peakWeeks": { "default": 3, "long": 4, "longEvents": ["gran-fondo", "marathon"] },
+    "buildWeeks": [6, 8],
+    "minBaseWeeks": 6
+  },
+
+  "zones": {
+    "powerPctFtp": [
+      { "zone": "Z1", "name": "Active recovery", "max": 55 },
+      { "zone": "Z2", "name": "Endurance", "min": 56, "max": 75 },
+      { "zone": "Z3", "name": "Tempo", "min": 76, "max": 87 },
+      { "zone": "SST", "name": "Sweet spot", "min": 88, "max": 94 },
+      { "zone": "Z4", "name": "Threshold", "min": 95, "max": 105 },
+      { "zone": "Z5", "name": "VO2max", "min": 106, "max": 120 },
+      { "zone": "Z6", "name": "Anaerobic", "min": 121, "max": 150 },
+      { "zone": "Z7", "name": "Neuromuscular", "min": 151 }
+    ],
+    "easyCapPctFtp": 70,
+    "runPaceOffsetSecPerKm": [
+      { "zone": "Z1", "name": "Recovery", "minOffset": 60 },
+      { "zone": "Z2", "name": "Easy / long", "minOffset": 35, "maxOffset": 60 },
+      { "zone": "Z3", "name": "Marathon / steady", "minOffset": 15, "maxOffset": 35 },
+      { "zone": "Z4", "name": "Threshold", "minOffset": -5, "maxOffset": 10 },
+      { "zone": "Z5", "name": "VO2max", "minOffset": -30, "maxOffset": -15 },
+      { "zone": "Z6", "name": "Repetition", "maxOffset": -40 }
+    ],
+    "runHrPctLthr": [
+      { "zone": "Z1", "max": 84 }, { "zone": "Z2", "min": 85, "max": 89 }, { "zone": "Z3", "min": 90, "max": 94 },
+      { "zone": "Z4", "min": 95, "max": 102 }, { "zone": "Z5", "min": 103 }
+    ],
+    "bikeHrPctLthr": [
+      { "zone": "Z1", "max": 80 }, { "zone": "Z2", "min": 81, "max": 89 }, { "zone": "Z3", "min": 90, "max": 93 },
+      { "zone": "Z4", "min": 94, "max": 99 }, { "zone": "Z5", "min": 100 }
+    ]
+  },
+
+  "powerProfile": {
+    "explosive": { "surgeMin": 1.8, "burstMin": 3.8 },
+    "steady": { "surgeMax": 1.45, "ceilingMax": 1.12 },
+    "ftpLikelyLowCeiling": 1.30
+  }
+}

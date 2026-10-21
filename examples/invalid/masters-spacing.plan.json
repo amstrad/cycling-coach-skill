@@ -1,0 +1,80 @@
+{
+  "description": "Age 55: threshold two days after an HI session, and heavy gym the day before it.",
+  "expectErrors": [
+    "GAP_HI_HARD",
+    "GYM_BEFORE_KEY"
+  ],
+  "week": "2026-W44",
+  "athlete": {
+    "age": 55,
+    "level": "intermediate",
+    "sport": "cycling",
+    "targetedSessionCap": 2
+  },
+  "phase": "build",
+  "weekType": "build",
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "30-15s",
+          "step": 1,
+          "durationMin": 47
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "strength"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "sub-threshold",
+          "step": 1,
+          "durationMin": 65
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 120
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "long-ride",
+          "durationMin": 150
+        }
+      ]
+    }
+  ]
+}

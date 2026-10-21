@@ -1,0 +1,21 @@
+{
+  "name": "cycling-coach-skill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An agent skill that plans cycling and running training weeks like a professional coach, with machine-readable rules and a week validator.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node tools/check-skill.mjs",
+    "validate": "node scripts/validate-week.mjs",
+    "build": "npm test && ./tools/package-skill.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amstrad/cycling-coach-skill.git"
+  },
+  "author": "Diego Garcia",
+  "license": "MIT"
+}

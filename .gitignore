@@ -1,0 +1,13 @@
+# Build output
+*.skill
+
+# Personal data and generated plans: never commit them
+athlete-profile.json
+/output/
+
+# Local reference material and editor files
+/docs
+/.idea
+.DS_Store
+._*
+.env

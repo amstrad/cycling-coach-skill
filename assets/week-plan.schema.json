@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/amstrad/cycling-coach-skill/assets/week-plan.schema.json",
+  "title": "Week plan",
+  "description": "Structured form of one training week. The skill writes it as YYYY-Wnn-plan.json; scripts/validate-week.mjs checks it against assets/rules.json. Pattern ids are the keys of rules.json `sessions`.",
+  "type": "object",
+  "required": ["week", "days"],
+  "$defs": {
+    "session": {
+      "type": "object",
+      "required": ["pattern"],
+      "properties": {
+        "pattern": { "type": "string", "description": "A key of rules.json sessions, e.g. 30-15s, sub-threshold, long-run, strength." },
+        "step": { "type": "integer", "minimum": 1, "maximum": 3 },
+        "durationMin": { "type": "number", "minimum": 0 },
+        "tss": { "type": "number", "minimum": 0, "description": "Overrides the estimate from rules.json." },
+        "distanceKm": { "type": "number", "minimum": 0, "description": "Runs: total distance, needed for ramp and share checks." },
+        "qualityKm": { "type": "number", "minimum": 0, "description": "Runs: distance at threshold pace or faster." },
+        "hard": { "type": "boolean", "description": "Social rides only: true when the group ride is expected to be hard." },
+        "name": { "type": "string" },
+        "file": { "type": "string", "description": "Workout file name, e.g. 30-15s-3x13.zwo." },
+        "note": { "type": "string" }
+      }
+    },
+    "day": {
+      "type": "object",
+      "required": ["day", "sessions"],
+      "properties": {
+        "day": { "enum": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"] },
+        "sessions": { "type": "array", "items": { "$ref": "#/$defs/session" } }
+      }
+    }
+  },
+  "properties": {
+    "week": { "type": "string", "pattern": "^[0-9]{4}-W[0-9]{2}$" },
+    "profile": { "type": "string", "description": "Path to athlete-profile.json, relative to this file." },
+    "athlete": {
+      "type": "object",
+      "description": "Values that override or extend the profile for this week.",
+      "properties": {
+        "age": { "type": "integer" },
+        "level": { "enum": ["beginner", "intermediate", "advanced"] },
+        "sport": { "enum": ["cycling", "running", "both"] },
+        "targetedSessionCap": { "type": "integer" },
+        "consistentWeeks": { "type": "integer", "minimum": 0, "description": "Consecutive weeks with 3+ sessions; gates HI work for beginners." },
+        "hiBlock": { "type": "boolean", "description": "Advanced athletes under 40: this week is the HI-block week." },
+        "eventType": { "type": "string" }
+      }
+    },
+    "phase": { "enum": ["transition", "base", "build", "peak", "taper", "race-week"] },
+    "weekType": { "enum": ["build", "deload"] },
+    "block": {
+      "type": "object",
+      "properties": {
+        "index": { "type": "integer", "minimum": 0 },
+        "type": { "enum": ["3:1", "2:1"] },
+        "week": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "powerProfile": { "enum": ["explosive", "balanced", "steady"] },
+    "previousWeek": {
+      "type": "object",
+      "properties": {
+        "tss": { "type": "number" },
+        "runKm": { "type": "number" },
+        "weekType": { "enum": ["build", "deload"] },
+        "patternSteps": { "type": "object", "additionalProperties": { "type": "integer" } },
+        "lastDays": { "type": "array", "maxItems": 3, "items": { "$ref": "#/$defs/day" }, "description": "The last days of the previous week in order, so rules can see across the week boundary." }
+      }
+    },
+    "days": { "type": "array", "minItems": 7, "maxItems": 7, "items": { "$ref": "#/$defs/day" } }
+  }
+}

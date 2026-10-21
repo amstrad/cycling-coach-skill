@@ -1,0 +1,43 @@
+{
+  "language": "es",
+  "units": "metric",
+  "voiceGuidelines": "",
+  "goalWkg": 3.6,
+  "openDays": [
+    "Mon",
+    "Tue",
+    "Wed",
+    "Thu",
+    "Fri",
+    "Sat",
+    "Sun"
+  ],
+  "usualDurationMin": 60,
+  "targetedSessionCap": 2,
+  "gymDefault": "strength+core",
+  "powerProfileOverride": null,
+  "exportFormat": "zwo",
+  "intervalsAthleteId": null,
+  "publishToIntervals": "ask",
+  "level": "intermediate",
+  "eventType": "gran-fondo",
+  "eventDate": "2027-05-16",
+  "thresholdPaceSecPerKm": null,
+  "lthr": null,
+  "maxHr": null,
+  "weeklyKm": null,
+  "trainingState": null,
+  "constraints": [],
+  "name": "Jordi",
+  "sport": "cycling",
+  "objective": "Hold the front group on the Sunday club ride and finish a 140 km gran fondo",
+  "age": 52,
+  "gender": "male",
+  "weightKg": 74,
+  "baselineFtp": 255,
+  "socialDays": [
+    "Sat"
+  ],
+  "trainingAgeYears": 12,
+  "weeklyHours": 8
+}

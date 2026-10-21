@@ -1,0 +1,106 @@
+{
+  "week": "2026-W44",
+  "profile": "../profiles/beginner-cyclist.json",
+  "athlete": {
+    "consistentWeeks": 5
+  },
+  "phase": "base",
+  "weekType": "build",
+  "block": {
+    "index": 0,
+    "type": "2:1",
+    "week": 1
+  },
+  "powerProfile": "balanced",
+  "previousWeek": {
+    "tss": 200,
+    "weekType": "build",
+    "patternSteps": {},
+    "lastDays": [
+      {
+        "day": "Sat",
+        "sessions": [
+          {
+            "pattern": "social-ride",
+            "durationMin": 90
+          }
+        ]
+      },
+      {
+        "day": "Sun",
+        "sessions": [
+          {
+            "pattern": "aerobic-base",
+            "durationMin": 60
+          }
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "tempo",
+          "step": 1,
+          "durationMin": 70
+        },
+        {
+          "pattern": "core"
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 45
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "social-ride",
+          "durationMin": 90
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 75
+        }
+      ]
+    }
+  ]
+}

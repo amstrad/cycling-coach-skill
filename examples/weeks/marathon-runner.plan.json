@@ -1,0 +1,116 @@
+{
+  "week": "2026-W44",
+  "profile": "../profiles/marathon-runner.json",
+  "phase": "build",
+  "weekType": "build",
+  "block": {
+    "index": 1,
+    "type": "3:1",
+    "week": 3
+  },
+  "previousWeek": {
+    "tss": 360,
+    "runKm": 66,
+    "weekType": "build",
+    "patternSteps": {
+      "cruise-intervals": 2
+    },
+    "lastDays": [
+      {
+        "day": "Sat",
+        "sessions": [
+          {
+            "pattern": "easy-run",
+            "durationMin": 45,
+            "distanceKm": 8
+          }
+        ]
+      },
+      {
+        "day": "Sun",
+        "sessions": [
+          {
+            "pattern": "long-run",
+            "durationMin": 135,
+            "distanceKm": 23,
+            "qualityKm": 8
+          }
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "cruise-intervals",
+          "step": 3,
+          "durationMin": 60,
+          "distanceKm": 14,
+          "qualityKm": 6.7
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 65,
+          "distanceKm": 12
+        },
+        {
+          "pattern": "strength"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 65,
+          "distanceKm": 12
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "core"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 45,
+          "distanceKm": 8
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "long-run",
+          "durationMin": 140,
+          "distanceKm": 24,
+          "qualityKm": 10
+        }
+      ]
+    }
+  ]
+}

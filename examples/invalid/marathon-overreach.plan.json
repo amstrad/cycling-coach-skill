@@ -1,0 +1,92 @@
+{
+  "description": "Long run is half the week, distance jumps 25 %, and VO2 reps follow the long run.",
+  "expectErrors": [
+    "RUN_LONG_SHARE",
+    "RUN_RAMP",
+    "RUN_SPEED_AFTER_LONG",
+    "HI_AFTER_BIG_DAY",
+    "CONSECUTIVE_HARD"
+  ],
+  "week": "2026-W44",
+  "athlete": {
+    "age": 45,
+    "level": "intermediate",
+    "sport": "running",
+    "targetedSessionCap": 2,
+    "eventType": "marathon"
+  },
+  "phase": "build",
+  "weekType": "build",
+  "previousWeek": {
+    "runKm": 40,
+    "weekType": "build"
+  },
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 45,
+          "distanceKm": 8
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 45,
+          "distanceKm": 8
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "long-run",
+          "durationMin": 165,
+          "distanceKm": 25
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "vo2-reps",
+          "step": 1,
+          "durationMin": 50,
+          "distanceKm": 9,
+          "qualityKm": 3
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "description": "Beginner with 3 consistent weeks given a VO2 session and two key sessions.",
+  "expectErrors": [
+    "HI_COUNT_MAX",
+    "KEY_SESSIONS_MAX"
+  ],
+  "week": "2026-W44",
+  "athlete": {
+    "age": 30,
+    "level": "beginner",
+    "sport": "cycling",
+    "targetedSessionCap": 2,
+    "consistentWeeks": 3
+  },
+  "phase": "base",
+  "weekType": "build",
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "aerobic-ceiling",
+          "step": 1,
+          "durationMin": 57
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "tempo",
+          "step": 1,
+          "durationMin": 70
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 60
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 75
+        }
+      ]
+    }
+  ]
+}

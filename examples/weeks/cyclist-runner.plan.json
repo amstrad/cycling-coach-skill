@@ -1,0 +1,116 @@
+{
+  "week": "2026-W44",
+  "profile": "../profiles/cyclist-runner.json",
+  "phase": "build",
+  "weekType": "build",
+  "block": {
+    "index": 0,
+    "type": "3:1",
+    "week": 3
+  },
+  "powerProfile": "steady",
+  "previousWeek": {
+    "tss": 520,
+    "runKm": 40,
+    "weekType": "build",
+    "patternSteps": {
+      "30-15s": 2,
+      "threshold": 2
+    },
+    "lastDays": [
+      {
+        "day": "Sat",
+        "sessions": [
+          {
+            "pattern": "long-ride",
+            "durationMin": 225
+          }
+        ]
+      },
+      {
+        "day": "Sun",
+        "sessions": [
+          {
+            "pattern": "easy-run",
+            "durationMin": 60,
+            "distanceKm": 11
+          }
+        ]
+      }
+    ]
+  },
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 55,
+          "distanceKm": 10
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "30-15s",
+          "step": 3,
+          "durationMin": 60
+        },
+        {
+          "pattern": "strength"
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 65,
+          "distanceKm": 12
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "threshold",
+          "step": 3,
+          "durationMin": 75
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 45,
+          "distanceKm": 8
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "long-ride",
+          "durationMin": 240
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "easy-run",
+          "durationMin": 65,
+          "distanceKm": 12
+        }
+      ]
+    }
+  ]
+}
