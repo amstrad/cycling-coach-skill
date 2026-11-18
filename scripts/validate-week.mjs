@@ -146,6 +146,28 @@ export function validatePlan(plan, profile = {}, rules = loadRules()) {
     }
   }
 
+  // Durability test: fresh and fatigued maximal efforts belong on separate days
+  if (rules.durabilityTest?.separateDayFromOtherTests) {
+    for (const t of week) {
+      const tests = t.d.sessions.filter((s) => rules.sessions[s.pattern]?.class === 'test');
+      if (tests.length > 1 && tests.some((s) => s.pattern === 'durability-test')) {
+        report.error('DURABILITY_TEST_SAME_DAY', t.label, 'durability test on the same day as another benchmark; test fresh and fatigued on separate days');
+      }
+    }
+  }
+
+  // Fuelling: planned intake above the range the evidence supports
+  const carbMax = rules.fuelling?.carbGPerHourEvidenceMax;
+  if (typeof carbMax === 'number') {
+    for (const t of week) {
+      for (const s of t.d.sessions) {
+        if (typeof s.carbGPerHour === 'number' && s.carbGPerHour > carbMax) {
+          report.warn('CARB_ABOVE_EVIDENCE', t.label, `${s.carbGPerHour} g/h of carbohydrate planned for ${s.pattern}; benefit above ${carbMax} g/h is not established, so keep it only if practised and well tolerated`);
+        }
+      }
+    }
+  }
+
   // Weekly counts
   const hardCount = week.filter((t) => t.c.hard).length;
   const maxHard = Math.min(band.maxHardDays, level.maxHardDays);

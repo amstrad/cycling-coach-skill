@@ -12,6 +12,14 @@ Notable changes are recorded here. The format follows [Keep a Changelog](https:/
 - `power-profiles.md`: hill-climb and ultra objectives, and the three-tier rider-shape pyramid.
 - `fuelling.md`: a row for efforts of 12 h or more. `periodization.md`: a pointer to the ultra taper.
 
+### Evidence
+
+- New `references/evidence.md`: 17 papers on durability, climbing, sleep in multi-day events, and carbohydrate intake, each with its finding, evidence level, link, and the guide it supports. Guides cite rows as (E04).
+- `ultra-distance.md`: new sections on durability (what it is, why intensity matters more than kJ, adjusting late targets) and on sleep in multi-day events; evidence for pacing; carbohydrate ranges by hours of effort, stated as orientation, with the debate above 90 g/h.
+- `hill-climb.md`: W/kg against allometric scaling, why a flat FTP does not transfer to a climb, and pacing with critical power and W′.
+- `testing-and-zones.md`: an optional durability test, built on published methodological guidance.
+- `fuelling.md`: pointers to the evidence. No number changed.
+
 ### Changed
 
 - Cycling heart-rate zones now use Coggan's five bands (Z2 = 68–83 % LTHR, was 81–89 %), in `testing-and-zones.md` and `zones.bikeHrPctLthr`. The guide also says how to estimate LTHR and HRmax when they are missing.
@@ -19,6 +27,10 @@ Notable changes are recorded here. The format follows [Keep a Changelog](https:/
 ### Rules and tooling
 
 - `assets/rules.json`: new `indoorMaxBlockMinutes`, `heat`, and `powerProfile.pyramid`, `base`, and `radar` blocks.
+- `assets/rules.json`: new `durability-test` session, and `durabilityTest` and `fuelling` blocks. Each carries a `source` that points at a row of `references/evidence.md`.
+- Validator: error `DURABILITY_TEST_SAME_DAY` (a durability test on the same day as another benchmark) and warning `CARB_ABOVE_EVIDENCE` (a session's optional `carbGPerHour` above 90 g/h).
+- `assets/week-plan.schema.json`: optional `carbGPerHour` on a session.
+- `npm test` checks that every `source` and every in-text citation resolves to an evidence row, and that examples raise the warnings they list in `expectWarnings`.
 
 ## [1.0.1] - 2026-10-21
 

@@ -1,0 +1,84 @@
+{
+  "description": "A durability test on the same day as the FTP test, and a long ride fuelled above the supported range.",
+  "expectErrors": [
+    "DURABILITY_TEST_SAME_DAY"
+  ],
+  "expectWarnings": [
+    "CARB_ABOVE_EVIDENCE"
+  ],
+  "week": "2026-W44",
+  "athlete": {
+    "age": 35,
+    "level": "intermediate",
+    "sport": "cycling",
+    "targetedSessionCap": 2
+  },
+  "phase": "base",
+  "weekType": "build",
+  "days": [
+    {
+      "day": "Mon",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Tue",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 60
+        }
+      ]
+    },
+    {
+      "day": "Wed",
+      "sessions": [
+        {
+          "pattern": "long-ride",
+          "durationMin": 150,
+          "carbGPerHour": 110
+        }
+      ]
+    },
+    {
+      "day": "Thu",
+      "sessions": [
+        {
+          "pattern": "aerobic-base",
+          "durationMin": 60
+        }
+      ]
+    },
+    {
+      "day": "Fri",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    },
+    {
+      "day": "Sat",
+      "sessions": [
+        {
+          "pattern": "ftp-test"
+        },
+        {
+          "pattern": "durability-test",
+          "durationMin": 150
+        }
+      ]
+    },
+    {
+      "day": "Sun",
+      "sessions": [
+        {
+          "pattern": "rest"
+        }
+      ]
+    }
+  ]
+}

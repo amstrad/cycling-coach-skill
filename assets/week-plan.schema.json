@@ -16,6 +16,7 @@
         "tss": { "type": "number", "minimum": 0, "description": "Overrides the estimate from rules.json." },
         "distanceKm": { "type": "number", "minimum": 0, "description": "Runs: total distance, needed for ramp and share checks." },
         "qualityKm": { "type": "number", "minimum": 0, "description": "Runs: distance at threshold pace or faster." },
+        "carbGPerHour": { "type": "number", "minimum": 0, "description": "Planned carbohydrate intake during the session, in grams per hour. Optional; checked against rules.json fuelling." },
         "hard": { "type": "boolean", "description": "Social rides only: true when the group ride is expected to be hard." },
         "name": { "type": "string" },
         "file": { "type": "string", "description": "Workout file name, e.g. 30-15s-3x13.zwo." },

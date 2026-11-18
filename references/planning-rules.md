@@ -124,4 +124,6 @@ See `athlete-levels.md` for the classification. In short: beginners earn volume 
 | `STEP_JUMP`, `STEP_RANGE` / `STEP_ON_DELOAD` | 13, progression | error / warning |
 | `RUN_HARD_DAYS`, `RUN_SPEED_AFTER_LONG`, `RUN_LONG_AFTER_SPEED`, `RUN_RAMP`, `RUN_LONG_SHARE`, `RUN_QUALITY_CAP`, `IMPACT_CONSECUTIVE` | R1–R5, R8 | error |
 | `RUN_LONG_DURATION` | R4 | error above 3 h, warning above the level guide |
+| `DURABILITY_TEST_SAME_DAY` | durability test, `testing-and-zones.md` | error |
+| `CARB_ABOVE_EVIDENCE` | planned intake above 90 g/h, `fuelling.md` | warning |
 | `NO_REST_DAY`, `TSS_BAND`, `LONG_RIDE_LEVEL`, `ROTATION_MISMATCH`, `TSS_UNKNOWN`, `RUN_DISTANCE_MISSING` | sequencing, load bands, rotation | warning |

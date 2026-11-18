@@ -29,6 +29,18 @@
     "raceSpecific": 20
   },
 
+  "durabilityTest": {
+    "description": "Optional benchmark: a maximal 20-min effort after fixed prior work, compared with the fresh 20-min test done on another day.",
+    "separateDayFromOtherTests": true,
+    "source": "references/evidence.md#E03"
+  },
+
+  "fuelling": {
+    "description": "A session's planned carbohydrate intake (carbGPerHour) above this draws a warning: benefit beyond it is not established.",
+    "carbGPerHourEvidenceMax": 90,
+    "source": "references/evidence.md#E17"
+  },
+
   "sessions": {
     "rest":                  { "sport": "any",  "class": "rest",      "tss": 0 },
     "recovery-spin":         { "sport": "bike", "class": "easy",      "tssPerHour": 30 },
@@ -48,6 +60,7 @@
     "sprints":               { "sport": "bike", "class": "neuro",     "tss": [30, 35, 40],  "durationMin": [45, 50, 55] },
     "torque-starts":         { "sport": "bike", "class": "neuro",     "tss": [30, 35, 40],  "durationMin": [45, 50, 55] },
     "ftp-test":              { "sport": "bike", "class": "test",      "tss": 75, "durationMin": 60 },
+    "durability-test":       { "sport": "bike", "class": "test",      "tssPerHour": 65 },
 
     "easy-run":              { "sport": "run",  "class": "easy",      "tssPerHour": 55 },
     "long-run":              { "sport": "run",  "class": "long",      "tssPerHour": 58 },

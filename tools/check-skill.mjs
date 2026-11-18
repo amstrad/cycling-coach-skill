@@ -77,6 +77,26 @@ for (const [id, s] of Object.entries(rules.sessions)) {
 }
 ok(`rules.json (${Object.keys(rules.sessions).length} sessions, ${rules.age.length} age bands)`);
 
+// 3a. Every `source` in rules.json points at an existing row of references/evidence.md
+const evidence = readFileSync(join(ROOT, 'references/evidence.md'), 'utf8');
+const evidenceIds = new Set([...evidence.matchAll(/^\| (E\d{2}) \|/gm)].map((m) => m[1]));
+let sources = 0;
+(function walk(node, path) {
+  if (!node || typeof node !== 'object') return;
+  for (const [k, v] of Object.entries(node)) {
+    if (k === 'source') {
+      sources++;
+      const id = (String(v).match(/^references\/evidence\.md#(E\d{2})$/) || [])[1];
+      if (!id) fail(`rules.json ${path}.source "${v}" must look like references/evidence.md#E01`);
+      else if (!evidenceIds.has(id)) fail(`rules.json ${path}.source points at ${id}, which is not a row of references/evidence.md`);
+    } else walk(v, `${path}.${k}`);
+  }
+})(rules, 'rules');
+for (const m of [...readdirSync(join(ROOT, 'references'))].flatMap((f) => [...readFileSync(join(ROOT, 'references', f), 'utf8').matchAll(/\((E\d{2})(?:[,–-] ?(E\d{2}))*\)/g)].flatMap((x) => x[0].match(/E\d{2}/g).map((id) => [f, id])))) {
+  if (!evidenceIds.has(m[1])) fail(`references/${m[0]} cites ${m[1]}, which is not a row of references/evidence.md`);
+}
+ok(`evidence (${evidenceIds.size} rows, ${sources} rule sources)`);
+
 // 3b. Strava tag table only uses known pattern ids
 const strava = readFileSync(join(ROOT, 'references/strava-sync.md'), 'utf8');
 for (const line of strava.split('\n').filter((l) => /^\| ("|\*\(runs\)\*)/.test(l))) {
@@ -107,8 +127,10 @@ for (const f of readdirSync(join(ROOT, 'examples/invalid')).filter((x) => x.ends
   const res = validatePlan(plan, profile, rules);
   const got = [...new Set(res.errors.map((e) => e.code))].sort();
   const want = [...new Set(plan.expectErrors || [])].sort();
+  const missingWarnings = (plan.expectWarnings || []).filter((c) => !res.warnings.some((w) => w.code === c));
   if (JSON.stringify(got) !== JSON.stringify(want)) fail(`examples/invalid/${f}: expected [${want}] but got [${got}]`);
-  else ok(`examples/invalid/${f} fails with ${got.join(', ')}`);
+  else if (missingWarnings.length) fail(`examples/invalid/${f}: expected warning(s) ${missingWarnings.join(', ')}`);
+  else ok(`examples/invalid/${f} fails with ${got.join(', ')}${plan.expectWarnings ? ` and warns ${plan.expectWarnings.join(', ')}` : ''}`);
 }
 
 if (failures.length) {
