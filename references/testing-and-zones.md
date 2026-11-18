@@ -103,7 +103,7 @@ on the bike, so an easy ride shows up as tempo.
 
 - Round each bound to the nearest bpm; cap the top zones at HRmax when it is known.
 - The athlete's own zones (set by hand or in Intervals.icu) always win over these bands.
-- No LTHR: take LTHR = 0.89 × HRmax and say it is an estimate. No HRmax either: HRmax = 208 − 0.7 × age (Tanaka), an
+- No LTHR: take LTHR = 0.89 × HRmax and say it is an estimate. No HRmax either: HRmax = 208 − 0.7 × age (Tanaka; E35 in `evidence.md`), an
   estimate to replace with a test. Never Karvonen.
 - An LTHR above 93 % of HRmax is probably wrong: ask the athlete to check it, change nothing.
 - A power target in Z1–Z4 reads as the HR zone of the same number. Above threshold (power Z5+) there is no honest HR

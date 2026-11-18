@@ -37,6 +37,7 @@ Turn a short exchange into a training week an athlete can act on: a seven-day ma
 | `references/adjustments.md` | Scoring sessions; repairing the week after missed, moved, or failed sessions. |
 | `references/testing-and-zones.md` | Tests, zones, and rules for updating FTP and threshold pace; the optional durability test. |
 | `references/fuelling.md` | Fuelling and recovery cues; red flags to surface. |
+| `references/sources.md` | The index of everything the guides rest on, by category: papers, books and models, coaching sites, platforms and formats, and the guides that have no source. |
 | `references/evidence.md` | The papers behind the guides: one row per paper with its finding and evidence level. Cited as (E04) in the guides and as `source` in `assets/rules.json`. |
 | `references/schedule-format.md`, `references/zwift-xml.md` | Output formats. |
 

@@ -200,7 +200,8 @@ A session may carry an optional `carbGPerHour`. Above 90 g/h the validator warns
 | `adjustments.md` | Session scoring and repairing a week after missed or failed sessions. |
 | `testing-and-zones.md` | FTP and threshold-pace tests, zones, rules for updating them automatically, and an optional durability test. |
 | `fuelling.md` | Fuelling and recovery cues, plus red flags. Ranges are starting points to practise, not prescriptions. |
-| `evidence.md` | The papers behind the guides: reference, finding, evidence level, link, and where each is applied. |
+| `evidence.md` | The papers behind the guides: reference, finding, evidence level, how much was read, link, and where each is applied. |
+| `sources.md` | Every source by category: papers, books and models, coaching sites, platforms and formats, and which guides have no source. |
 | `intervals-icu.md`, `strava-sync.md`, `garmin-snapshot.md` | The data sources. |
 | `profile-schema.md`, `first-time-setup.md` | Profile fields and setup questions. |
 | `schedule-format.md`, `zwift-xml.md` | Output formats. |

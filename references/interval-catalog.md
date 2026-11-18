@@ -16,7 +16,7 @@ Patterns rotate **per block**, not per week. A block is the 3:1 or 2:1 mesocycle
 
 Each pair is one high-intensity (HI) session plus one threshold-type session, except Explosive row 0, where both are threshold-type because the sustained engine is the limiter. Never pair two HI patterns (30/15s, 40/20s, aerobic ceiling, shrinking ladder) in one week; they hit the same system and double the recovery cost. Place the HI session first in the week. Phase overrides the table: Base swaps the HI slot for tempo or low-cadence force on alternate weeks, and Peak swaps the threshold slot for race simulation (`periodization.md`).
 
-> **30/15s micro-intervals replace the classic aerobic-ceiling slot throughout.** Work by Rønnestad and colleagues shows 3 × 13 reps outperforming 4–5 min evenly paced intervals for VO2max and power in trained cyclists. A classic 4×4 min aerobic-ceiling session may fill any 30/15s slot when the rider genuinely prefers longer efforts.
+> **30/15s micro-intervals replace the classic aerobic-ceiling slot throughout.** Work by Rønnestad and colleagues shows 3 × 13 reps outperforming 4–5 min evenly paced intervals for VO2max and power in trained cyclists (E33 and E34 in `evidence.md`; two small studies, and the gain in VO2max appeared only in the one-week block of E34, not in E33). A classic 4×4 min aerobic-ceiling session may fill any 30/15s slot when the rider genuinely prefers longer efforts.
 
 **Progression within a pattern.** Build week 1 of a block uses step 1, week 2 step 2, week 3 step 3. In a 2:1 block use steps 1 and 2; advanced riders may use steps 2 and 3. Move up only when the push test in `planning-rules.md` passes; otherwise repeat the step and the block stretches by a week, capped at 5 weeks before a forced deload.
 

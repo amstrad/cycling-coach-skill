@@ -12,6 +12,9 @@ Notable changes are recorded here. The format follows [Keep a Changelog](https:/
 - `testing-and-zones.md`: the cycling heart-rate bands are documented as a convention (Coggan's levels) and not an evidence-based threshold, with an audit of every place "Z2" appears.
 - Labelled as coach heuristics where they appear: the age-based spacing and limits (`planning-rules.md`, `coaching-model.md`), strength twice a week from 50 (`gym-catalog.md`), the indoor block caps (`interval-catalog.md`), and in `ultra-distance.md` the 90 % Z2 share, pacing as a share of FTP, and 45–60 g/h for efforts of 12 h and more.
 
+- New `references/sources.md`: the index of everything the guides rest on, by category (papers, the versions that were read, books and models, coaching sites, platforms and formats, and the guides with no source).
+- `references/evidence.md`: rows E33–E35 for the two short-interval studies behind the 30/15 session and for the maximal heart-rate formula.
+
 ### Added
 
 - `eventType` gains `ultra-distance`, with the taper and peak length the guides already gave (`taper`, `phases.peakWeeks.longEvents` in `assets/rules.json`).

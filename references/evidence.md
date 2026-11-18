@@ -2,6 +2,8 @@
 
 One row per paper. The guides cite a row by its id, for example (E04), and rules in `assets/rules.json` that rest on a paper carry a `source` field such as `references/evidence.md#E03`. Every row was checked against the abstract or the full text; the finding column says only what that paper supports.
 
+For the full list of what the guides rest on, including books, models, platforms and the guides that have no source, see `sources.md`.
+
 ## Evidence levels
 
 | Level | Meaning |
@@ -85,6 +87,14 @@ Each row says how much of the paper was read when the row was written:
 | E30 | Daanen HAM, Racinais S, Périard JD (2018). Heat acclimation decay and re-induction: a systematic review and meta-analysis. *Sports Med* 48(2):409–430. | Five or more days of heat acclimation adapt heart rate and core temperature; about 2.5 % of those adaptations is lost per day without heat, and re-acclimation is 8–12 times faster than the decay (two days after twelve days off, four after twenty-six, in one study). Ten sessions spread over three weeks adapted less than daily sessions, and one session a week produced no adaptation. The trials used 60–120 min a day. Twelve studies, with unstandardised protocols. | Full text | Strong | [doi:10.1007/s40279-017-0808-x](https://doi.org/10.1007/s40279-017-0808-x) | `heat-training.md` |
 | E31 | Gibson OR, Mee JA, Tuttle JA, Taylor L, Watt PW, Maxwell NS (2015). Isothermic and fixed intensity heat acclimation methods induce similar heat adaptation following short and long-term timescales. *J Therm Biol* 49–50:55–65. | In 24 men, five and ten daily 90-min sessions holding a rectal temperature of 38.5 °C (39.0 °C in the second week for one group) gave the same adaptation as sessions at a fixed intensity, with less exercise; those groups spent about 32–49 min a session at or above 38.5 °C. The laboratory ended a test at 39.7 °C. | Full text | Weak | [doi:10.1016/j.jtherbio.2015.02.005](https://doi.org/10.1016/j.jtherbio.2015.02.005) | `heat-training.md` |
 | E32 | Pryor JL, Pryor RR, Vandermark LW, Adams EL, VanScoy RM, Casa DJ, Armstrong LE, Lee EC, DiStefano LJ, Anderson JM, Maresh CM (2019). Intermittent exercise-heat exposures and intense physical activity sustain heat acclimation adaptations. *J Sci Med Sport* 22(1):117–122. | In a randomised trial of 16 men, one exercise-heat exposure every fifth day kept the heart-rate and core-temperature adaptations 25 days after a 10–11-day acclimation. | Abstract only | Weak | [doi:10.1016/j.jsams.2018.06.009](https://doi.org/10.1016/j.jsams.2018.06.009) | `heat-training.md` |
+
+## Training methods and formulas
+
+| Id | Reference | Finding | Read depth | Level | Link | Applied in |
+|---|---|---|---|---|---|---|
+| E33 | Rønnestad BR, Hansen J, Nygaard H, Lundby C (2020). Superior performance improvements in elite cyclists following short-interval vs effort-matched long-interval training. *Scand J Med Sci Sports* 30(5):849–857. | In 18 elite cyclists, nine sessions over three weeks of 3 × 13 × 30 s with 15 s recoveries improved peak aerobic power, power at 4 mmol/L lactate and 20-min power more than 4 × 5 min at matched effort. VO2max did not differ between the groups. | Abstract only | Weak | [doi:10.1111/sms.13627](https://doi.org/10.1111/sms.13627) | `interval-catalog.md` |
+| E34 | Rønnestad BR, Øfsteng SJ, Zambolin F, Raastad T, Hammarström D (2021). Superior physiological adaptations after a microcycle of short intervals versus long intervals in cyclists. *Int J Sports Physiol Perform* 16(10):1432–1438. | In 17 well-trained cyclists, a one-week block of five sessions of 5 × 12 × 30 s with 15 s recoveries raised VO2max and power at 4 mmol/L lactate more than five sessions of 6 × 5 min. | Abstract only | Weak | [doi:10.1123/ijspp.2020-0647](https://doi.org/10.1123/ijspp.2020-0647) | `interval-catalog.md` |
+| E35 | Tanaka H, Monahan KD, Seals DR (2001). Age-predicted maximal heart rate revisited. *J Am Coll Cardiol* 37(1):153–156. | From 351 studies and 18,712 subjects, and a laboratory check in 514 adults, maximal heart rate is best predicted by 208 − 0.7 × age; 220 − age underestimates it in older adults. | Abstract only | Strong | [doi:10.1016/S0735-1097(00)01054-8](https://doi.org/10.1016/S0735-1097(00)01054-8) | `testing-and-zones.md` |
 
 ## Coach heuristics, no direct evidence
 
