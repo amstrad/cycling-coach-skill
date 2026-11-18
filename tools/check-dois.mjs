@@ -32,7 +32,8 @@ for (const line of text.split('\n')) {
     authors: head ? head[1].split(',').map((a) => a.trim().replace(/ [A-Z]{1,4}$/, '')) : [],
     years: head ? [head[2], head[3]].filter(Boolean) : [],
     title: head ? head[4] : null,
-    doi: (line.match(/\(https:\/\/doi\.org\/([^)\s]+)\)/) || [])[1] || null,
+    // A DOI with parentheses is percent-encoded in the link, so the markdown stays valid.
+    doi: decodeURIComponent((line.match(/\(https:\/\/doi\.org\/([^)\s]+)\)/) || [])[1] || '') || null,
   });
 }
 
