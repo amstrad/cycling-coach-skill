@@ -34,7 +34,8 @@ Adaptation needs consecutive exposure, so heat comes as a block:
 - **Limit:** no more than **75 minutes** in the heat; then fan on and finish easy.
 - **Stop:** at **39.5 °C**, or at once if dizzy, sick, chilled or with a headache.
 - **Effort:** endurance power or RPE 3–4; heart rate drifts to about **75–80 % of max** (lower in a hotter, more humid
-  room).
+  room). That reads as Z3 in the cycling heart-rate bands of `testing-and-zones.md`; the ride is still endurance by
+  power, and the heat accounts for the difference.
 - **Drink:** to sweat rate, usually **1–2 litres an hour**, with a strong electrolyte mix; weigh before and after and
   replace one and a half times the loss over the next hours.
 - **Cool-down:** 10 minutes easy with the fan on.

@@ -109,6 +109,37 @@ on the bike, so an easy ride shows up as tempo.
 - A power target in Z1–Z4 reads as the HR zone of the same number. Above threshold (power Z5+) there is no honest HR
   floor: say "above threshold, heart rate lags the effort".
 
+### These bands are a convention, not a measured threshold
+
+- **The model.** The cycling heart-rate bands are Andrew Coggan's levels as a share of LTHR, from the same scheme
+  as the power zones above (Allen and Coggan, *Training and Racing with a Power Meter*). Until version 1.0.1 the
+  skill used Joe Friel's cycling bands, where Z2 is 81–89 % of LTHR; version 1.1.0 moved Z2 to 68–83 %.
+- **What that change was.** A choice between two coaching conventions that draw the same easy riding in different
+  places. No study shows that 68 %, 83 %, 81 % or 89 % of LTHR marks a physiological boundary, and `evidence.md`
+  has no row for either scheme. The boundaries that physiology does define are the two thresholds (the first rise
+  in lactate or ventilation, and the maximal steady state), and they sit at a different share of LTHR in every
+  rider.
+- **What follows.** "Z2" in this skill means **power**: 56–75 % of FTP, capped at 70 % on easy days. Heart rate
+  is the check, never the definition (see below). Where power and the heart-rate band disagree, power and RPE
+  decide. A rider with a lactate or ventilatory test uses their own first threshold as the top of easy riding,
+  which overrides both tables.
+- **Do not mix schemes.** A heart-rate figure quoted from a Friel-based plan, a watch, or a platform is not
+  comparable with these bands. Garmin's own zones are read as Garmin gives them (`garmin-snapshot.md`).
+- **Two sports, two conventions.** The running bands in `running-model.md` (Z2 = 85–89 % of running LTHR) follow
+  the Friel-style scheme and were not changed. Never read a cycling heart rate against them, or the reverse.
+
+Where "Z2" appears, and what it refers to:
+
+| Place | Meaning | Consistent with the table above |
+|---|---|---|
+| `interval-catalog.md` aerobic base, `coaching-model.md`, `rules.json` class `easy` | power, 60–70 % FTP | Yes. |
+| `planning-rules.md` easy day and intensity distribution, `adjustments.md` over-cooked | power, with 75 % FTP as the top of Z2 | Yes for the zone. The easy-day cap is 70 %; 75 % is the zone's edge and the point where a day counts as over-cooked. |
+| `ultra-distance.md` "about 90 % of sessions in Z2", `hill-climb.md`, `periodization.md`, `garmin-snapshot.md` actions | power Z2 | Yes. |
+| `heat-training.md` "heart rate drifts to about 75–80 % of max" | heart rate, as a share of HRmax | Read with care: with LTHR at 0.89 × HRmax that is 84–90 % of LTHR, which is Z3 in the table above (it was Z2 in the Friel bands). The session is still an endurance ride by power; the heat raises heart rate. Judge a heat session by power and core temperature, not by its heart-rate zone. |
+| `running-model.md`, `running-catalog.md`, `rules.json` `runHrPctLthr` | running pace, with the running heart-rate bands | A separate convention, by design. |
+| `garmin-snapshot.md` power-zone table | Garmin's seven zones (tempo to 90 %, threshold from 91 %) | Garmin's scheme, shown for reading the export; plans use the power zones above. |
+| `examples/` | no heart-rate figures | Nothing to reconcile. |
+
 Running HR zones are in `running-model.md`. Running LTHR is usually 5–10 bpm higher than cycling LTHR; never share HR zones across sports.
 
 ## Heart rate as a check, not the target
