@@ -21,7 +21,7 @@ Marathon and long-event plans include gut training: practise the race-day intake
 
 - Eat a carbohydrate-based meal 2–4 h before HI or threshold sessions, or a small snack 30–60 min before.
 - After key sessions and long days: carbohydrate plus 20–40 g protein within about an hour, especially when the next session is within 24 h.
-- Daily protein around 1.6 g/kg; older athletes (50+) benefit from 0.4 g/kg per meal spread across meals.
+- Daily protein around 1.6 g/kg; older athletes (50+) benefit from 0.4 g/kg per meal spread across meals. Whether masters athletes need more protein than younger ones is an open question between two reviews (E24, E25 in `evidence.md`; `masters.md`), so the skill gives no figure by age.
 - Low-carbohydrate or fasted riding is optional and only for easy Z2 under 90 min, never before or during HI work, never for beginners.
 
 ## Sleep and recovery

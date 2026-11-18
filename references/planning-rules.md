@@ -77,6 +77,8 @@ Push only when every row sits in the Push column. Any row in Hold or one row in 
 
 Under 18 is outside this skill's scope; say so and keep everything easy and playful.
 
+**Standing of the age rules.** Rule 3 and every row of this table are coach heuristics. Small studies of well-trained cyclists aged about 45–56 found the same physical recovery as in riders in their twenties, with slower *perceived* recovery; nothing has been tested over 60; and the claim that intensity and strength work protect VO2max and muscle rests on reviews, not trials. The rules stay as conservative defaults. What is and is not supported, row by row, is in `masters.md`.
+
 ## Level — what changes
 
 See `athlete-levels.md` for the classification. In short: beginners earn volume before intensity (no HI work in the first 8 consistent weeks), intermediates run the standard 2-key-session model, advanced riders can use short blocks and the 3-HI exception.

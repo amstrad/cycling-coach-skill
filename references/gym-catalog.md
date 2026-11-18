@@ -2,6 +2,8 @@
 
 A general exercise bank. Translate exercise names, load cues, and rest cues into the rider's language when building the session. The aim is durable force and stability, not mass. Once or twice a week, never the day before aerobic-ceiling or threshold work, a long run, or a speed session. Riders and runners 50+ keep two sessions a week year-round. Adjust to the rider: more posterior chain for power, more single-leg and core work for stability.
 
+Evidence: heavy strength training improved efficiency, short-duration power and time-trial performance in cyclists in a meta-analysis rated low certainty (E26 in `evidence.md`). It reports no result for older riders, so the two sessions a week from 50 are a coach heuristic (`masters.md`).
+
 ## Strength (legs and posterior chain)
 
 | Exercise | Sets × Reps | Load / cue | Rest |

@@ -28,6 +28,8 @@ For riders 50+, beginners, and anyone who failed the push test two weeks running
 
 Layer these rules on top of the easy-heavy structure. Read `age` from the profile; the fuller table is in `planning-rules.md`.
 
+These spacings are coach heuristics, kept as conservative defaults. The few direct studies found no slower physical recovery in well-trained cyclists up to their fifties, and none tested athletes over 60 (`masters.md`).
+
 - **Under 40:** one easy or rest day between hard sessions is enough.
 - **40–49:** never back-to-back hard days; two easy days between two high-intensity sessions; cut HI reps by about 20 %.
 - **50+:** never back-to-back hard days, and two easy or rest days after every high-intensity session or race (a threshold-type session may follow one easy day). From 60, two easy days follow every hard day; cut weekly volume before cutting intensity; keep one HI touch a week; strength twice a week; take a recovery week every 2–3 weeks instead of every 4.

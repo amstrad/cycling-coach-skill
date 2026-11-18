@@ -29,6 +29,7 @@ Turn a short exchange into a training week an athlete can act on: a seven-day ma
 | `references/hill-climb.md` | Hill climb races (one timed climb, 3–20 min): duration decides the limiter, VO2max and race-duration efforts, threshold maintenance, weight, warm-up and pacing. |
 | `references/heat-training.md` | Heat sessions with a core-temperature sensor: the block then maintenance, who and when, the core zone, the stops, the drink. |
 | `references/ultra-distance.md` | Ultra events (350 km or more, 20 h or more in one push, multi-day and bikepacking races) and what a long gran fondo borrows from them: durability, intensity split, long rides and back-to-backs, race simulation, taper, pacing, fuelling. |
+| `references/masters.md` | Athletes of 40 and over: what declines with age and why, what the recovery, protein and strength studies show, and which age rules are coach heuristics. |
 | `references/planning-rules.md` | Hard constraints, sequencing, the push/hold decision, age and level tables, validator codes. |
 | `references/interval-catalog.md`, `references/running-catalog.md` | Sessions, rotation per block, progression steps. |
 | `references/running-model.md` | Running zones, weekly structures per distance, runner-specific rules. |
@@ -89,6 +90,7 @@ If FTP figures disagree by more than 3 %, say so and ask which to trust. Summari
 - **Level:** `level`, else derive it with `references/athlete-levels.md`.
 - **Phase, block, and week type:** from `eventDate` and `trainingState` with `references/periodization.md`, or from `trainingState.seasonPlan` when one exists.
 - **Anchors:** apply the update rules in `references/testing-and-zones.md`, and check whether a benchmark is due.
+- **Age:** for an athlete of 40 or over, read `references/masters.md` before explaining any age-based constraint, and say once at setup that a medical check is their responsibility.
 - **Event guide:** for a single timed climb read `references/hill-climb.md`; for an ultra (350 km or more, 20 h or more in one push, or multi-day) read `references/ultra-distance.md`, and for a gran fondo of 8 h or more read its durability, pacing and fuelling sections. When the athlete asks why, give the reason and its evidence level from `references/evidence.md`, and never present a weak finding as settled.
 - **Progression:** push, hold, or step down with the decision table in `references/planning-rules.md`.
 
