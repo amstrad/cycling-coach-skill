@@ -1,5 +1,5 @@
 {
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "Machine-readable mirror of the planning numbers in references/. When a guide changes, change this file too; npm test checks both against the examples.",
 
   "classes": {
