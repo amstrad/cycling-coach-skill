@@ -14,8 +14,9 @@ weeks, and the back-to-back weekends as a standing feature.
 Distance decides first. The duration test exists for what distance misses, such as a 24 h race on a short loop.
 
 Sources:
-- Race Ready Cycling Training, "Training for ultra-distance cycling".
-- The TrainerRoad forum thread "Ultra-endurance training" (2022), a consensus of experienced ultra riders.
+- Race Ready Cycling Training, "Training for ultra-distance cycling" (unverified, no URL).
+- The TrainerRoad forum thread ["Ultra-endurance training"](https://www.trainerroad.com/forum/t/ultra-endurance-training/73495)
+  (2022), a consensus of experienced ultra riders.
 - The general principles already in `periodization.md`, `coaching-model.md` and `fuelling.md`.
 
 The numbers marked *heuristic* are common coaching practice, not taken from those sources. Treat them as
@@ -62,7 +63,8 @@ on ultra-cycling is weak: small field studies and reviews. Read it as a directio
 
 ## Intensity distribution
 
-- **About 90 % of sessions in Z2** (Race Ready Cycling). Most aerobic adaptations happen there.
+- **About 90 % of sessions in Z2** (Race Ready Cycling). Most aerobic adaptations happen there. *Coach heuristic, no direct evidence.*
+  The share comes from a coaching site, not from a study of ultra riders. Z2 here is power (`testing-and-zones.md`).
 - **One or two quality sessions a week, no more:** typically one threshold/sweet spot session and one short
   VO2max session. Riders report diminishing returns beyond two interval sessions a week for this goal.
   - Sweet spot and long tempo build the sustainable output the event is ridden just below.
@@ -100,6 +102,8 @@ on ultra-cycling is weak: small field studies and reviews. Read it as a directio
 ## Pacing (heuristic)
 
 - **12 h:** about 60–70 % of FTP on average. **24 h:** about 55–65 %. Multi-day: lower again, set by sleep and terrain.
+  *Coach heuristic, no direct evidence.* No paper in `evidence.md` gives a share of FTP for these durations; use the figures to open
+  the conversation and replace them with the rider's own long-ride data.
 - Use heart rate drift and RPE as the governors late in the event. Power falls with fatigue, heat and altitude.
 - **Do not chase the start.** Early surges are paid for many hours later. Work above threshold lowers later power
   more than its kJ suggest (E04), and each surge spends work capacity that refills slowly, and more slowly every
@@ -133,7 +137,9 @@ pacing plan, not time lost.
 
 - **By duration:** up to about 8 h, 60–90 g of carbohydrate an hour from the first hour. From about 12 h and in
   24 h or multi-day events, **45–60 g an hour, aiming for 60** (about 0.5–1.0 g per kg an hour, set by heart
-  rate, gut comfort and conditions), little and often.
+  rate, gut comfort and conditions), little and often. *Coach heuristic, no direct evidence.* The 45–60 g/h comes from the
+  coaching sources listed below. It falls inside the intakes that field studies report (see the table below), but
+  those describe what athletes ate, not what was tested as best.
 - **Fast and slow carbohydrate together:** about half simple (drink mix, sipped steadily, is the background supply)
   and half complex, so glucose reaches the blood both quickly and steadily. Train the gut to absorb both on the
   long rides; its capacity falls with fatigue, heat and lost sleep, so never force-feed.
@@ -150,7 +156,7 @@ pacing plan, not time lost.
   |---|---|---|
   | 1–2.5 h | 30–60 g/h | Professional road racing guidance (E16). |
   | 2.5–6 h | up to about 90 g/h, from glucose and fructose together | Well supported up to 90 g/h (E16, E17). |
-  | Over 6 h, at ultra pace | mostly 30–66 g/h reported in the field | Higher intake went with finishing in field studies, most of them in ultra-running (E15). This is where the 45–60 g/h above sits. |
+  | Over 6 h, at ultra pace | mostly 30–66 g/h reported in the field | Higher intake went with finishing in field studies, most of them in ultra-running (E15). These are observed intakes, not a tested target; the 45–60 g/h above is a coach heuristic that happens to fall inside them. |
 
 - **The debate above 90 g/h.** Professionals now take 120 g/h on hard stages, and one review argues that the
   upper limit could move toward 120 g/h in trained athletes (E15). Two others find little or no evidence of extra
@@ -168,9 +174,13 @@ pacing plan, not time lost.
   the longest events).
 - Practise refuelling from shops and petrol stations, as in the race.
 - Fluids and sodium follow heat and sweat rate. Plan the night-time cold and the reduced appetite.
-- Sources: Uphill Athlete, "Fat adaptation" (advises against fasted and low-carb training, particularly for women);
-  BarrUltra, "What does an ultra-endurance cyclist eat?"; WUCA, "Meeting Calorific Requirements" (Barr and
-  Hughes); Cyclite, ultra-distance nutrition guide.
+- Sources (coaching sites, not peer-reviewed; the links were located by search and their content was not
+  re-checked): Uphill Athlete, ["Fat adaptation"](https://uphillathlete.com/nutrition/fat-adaptation/) (advises
+  against fasted and low-carb training, particularly for women); BarrUltra,
+  ["What does an ultra-endurance cyclist eat?"](https://barrultra.com/news/what-does-an-ultra-endurance-cyclist-eat/);
+  WUCA, ["Meeting Calorific Requirements"](https://ultracycling.com/meeting-calorific-requirements/) (Barr and
+  Hughes); Cyclite,
+  [ultra-distance nutrition guide](https://cyclite.cc/en/blogs/bikepacking-stories/the-ultimate-guide-to-fueling-for-bikepacking-events-and-races).
 
 ## Strength and self-care
 

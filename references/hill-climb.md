@@ -4,7 +4,8 @@ Use this guide when the objective is one timed climb, the typical club hill-clim
 on steep roads (a few run to 15–20 min). Longer single climbs (20–40 min, e.g. a mountain pass TT) shift
 toward threshold, as below.
 
-Source: Roadman Cycling, "Cycling hill climb racing guide".
+Source: Roadman Cycling, ["Cycling hill climb racing guide"](https://roadmancycling.com/blog/cycling-hill-climb-racing-guide)
+(a coaching site, not peer-reviewed; the link was located by search and its content was not re-checked).
 Andy Coggan's modelling is cited there: at 10 %, 1 kg less body weight ≈ 4–5 W of sustained power.
 
 Where a paper supports a point, the text cites its row in `evidence.md`, for example (E10). The climbing studies

@@ -74,14 +74,34 @@ A weak row can still be the best evidence there is. Use it as a direction, state
 | E31 | Gibson OR, Mee JA, Tuttle JA, Taylor L, Watt PW, Maxwell NS (2015). Isothermic and fixed intensity heat acclimation methods induce similar heat adaptation following short and long-term timescales. *J Therm Biol* 49–50:55–65. | In 24 men, five and ten 90-min sessions holding a rectal temperature of 38.5 °C gave the same adaptation as sessions at a fixed intensity, with less exercise time and a lower intensity. | Weak | [doi:10.1016/j.jtherbio.2015.02.005](https://doi.org/10.1016/j.jtherbio.2015.02.005) | `heat-training.md` |
 | E32 | Pryor JL, Pryor RR, Vandermark LW, Adams EL, VanScoy RM, Casa DJ, Armstrong LE, Lee EC, DiStefano LJ, Anderson JM, Maresh CM (2019). Intermittent exercise-heat exposures and intense physical activity sustain heat acclimation adaptations. *J Sci Med Sport* 22(1):117–122. | In a randomised trial of 16 men, one exercise-heat exposure every fifth day kept the heart-rate and core-temperature adaptations 25 days after a 10–11-day acclimation. | Weak | [doi:10.1016/j.jsams.2018.06.009](https://doi.org/10.1016/j.jsams.2018.06.009) | `heat-training.md` |
 
+## Coach heuristics, no direct evidence
+
+These numbers are in the guides and, where noted, in `assets/rules.json`. No paper in the tables above supports them. They are kept as starting points and are labelled where they appear.
+
+| Heuristic | Where | Standing |
+|---|---|---|
+| Indoor work-block caps: tempo ≤ 20 min, sweet spot ≤ 15 min, threshold ≤ 10 min, race-specific ≤ 20 min | `interval-catalog.md`, `rules.json` `indoorMaxBlockMinutes` | Coach heuristic, no direct evidence. A comfort and adherence choice. |
+| "About 90 % of sessions in Z2" for ultra preparation | `ultra-distance.md` | Coach heuristic, no direct evidence. From a coaching site. |
+| Ultra pacing at 60–70 % of FTP for 12 h and 55–65 % for 24 h | `ultra-distance.md` | Coach heuristic, no direct evidence. |
+| 45–60 g of carbohydrate an hour for efforts of 12 h and more | `ultra-distance.md`, `fuelling.md` | Coach heuristic, no direct evidence. Inside the intakes observed in the field (E15), which are not a tested target. |
+| Age-based spacing, hard-day limits, the 20 % cut in reps, strength twice a week from 50, and every rule for athletes over 60 | `planning-rules.md`, `coaching-model.md`, `rules.json` `age` | Coach heuristic. The few direct studies found no slower physical recovery up to the fifties (E20–E23); nothing has been tested over 60. See `masters.md`. |
+| Heat: sessions spread over 4 days a week, 40 min in the zone, the scheduling gaps, the decay figures | `heat-training.md` | Coach heuristic or unverified; the standing of each rule is listed in that guide. |
+| Heat: ease off at 39.0 °C, stop at 39.5 °C, stop on symptoms | `heat-training.md`, `rules.json` `heat.protocol` | Conservative safety rule. Never loosened. |
+| Cycling heart-rate bands (Z2 = 68–83 % of LTHR) | `testing-and-zones.md`, `rules.json` `zones.bikeHrPctLthr` | A coaching convention (Coggan's levels), not an evidence-based threshold. |
+
 ## Coaching-practice sources
 
-These are named in the guides as the origin of practical advice. They are articles, forum threads, and coaching sites, not peer-reviewed studies, and they were not re-checked in the review that produced the tables above. Treat everything that rests on them as **Weak**.
+These are named in the guides as the origin of practical advice. They are articles, forum threads, and coaching sites, not peer-reviewed studies. Treat everything that rests on them as **Weak**. The links were located by search; their content was not re-checked against the guides, so each is marked.
 
-| Guide | Sources named there |
-|---|---|
-| `ultra-distance.md` | Race Ready Cycling Training; the TrainerRoad forum thread "Ultra-endurance training" (2022); Uphill Athlete; BarrUltra; WUCA; Cyclite. |
-| `hill-climb.md` | Roadman Cycling, "Cycling hill climb racing guide", which cites Andy Coggan's modelling. |
+| Guide | Source | Link | Status |
+|---|---|---|---|
+| `ultra-distance.md` | Race Ready Cycling Training, "Training for ultra-distance cycling" | none | Unverified, no URL. |
+| `ultra-distance.md` | TrainerRoad forum thread "Ultra-endurance training" (2022) | [trainerroad.com](https://www.trainerroad.com/forum/t/ultra-endurance-training/73495) | URL found; content not re-checked. |
+| `ultra-distance.md` | Uphill Athlete, "Fat adaptation" | [uphillathlete.com](https://uphillathlete.com/nutrition/fat-adaptation/) | URL found; content not re-checked. |
+| `ultra-distance.md` | BarrUltra, "What does an ultra-endurance cyclist eat?" | [barrultra.com](https://barrultra.com/news/what-does-an-ultra-endurance-cyclist-eat/) | URL found; content not re-checked. |
+| `ultra-distance.md` | WUCA, "Meeting Calorific Requirements" (Barr and Hughes) | [ultracycling.com](https://ultracycling.com/meeting-calorific-requirements/) | URL found; content not re-checked. |
+| `ultra-distance.md` | Cyclite, ultra-distance nutrition guide | [cyclite.cc](https://cyclite.cc/en/blogs/bikepacking-stories/the-ultimate-guide-to-fueling-for-bikepacking-events-and-races) | URL found for the closest title; the guide does not say which Cyclite page it used. |
+| `hill-climb.md` | Roadman Cycling, "Cycling hill climb racing guide", which cites Andy Coggan's modelling | [roadmancycling.com](https://roadmancycling.com/blog/cycling-hill-climb-racing-guide) | URL found; content not re-checked. |
 
 ## Adding a row
 

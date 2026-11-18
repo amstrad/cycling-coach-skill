@@ -120,6 +120,10 @@ recoveries give the same time in zone. Contiguous work with no easy part between
 one block. VO2max, anaerobic and sprint work already comes in short reps. Outdoors, a long steady block stays the
 right choice. If no shorter shape fits the day, keep the long block and say why.
 
+*Coach heuristic, no direct evidence.* The caps (tempo 20 min, sweet spot 15, threshold 10, race-specific 20) are a comfort and adherence
+choice for the trainer. No study shows that a longer unbroken block indoors trains less well or that these
+lengths are the right limits, and `evidence.md` has no row for them.
+
 Recoveries are 50–55 % FTP, ERG-friendly. Raise reps or sets with the level before lengthening a block.
 
 | Session | Shape | Level 1 → 10 |

@@ -23,6 +23,7 @@
 
   "indoorMaxBlockMinutes": {
     "description": "On the trainer, the longest unbroken work block of a key or long session, by system. Break longer work into blocks with short recoveries.",
+    "standing": "coach heuristic, no direct evidence",
     "tempo": 20,
     "sweetSpot": 15,
     "threshold": 10,
