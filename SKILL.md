@@ -26,6 +26,9 @@ Turn a short exchange into a training week an athlete can act on: a seven-day ma
 | `references/periodization.md` | Load formulas, phases from the event date, tapers, the weekly build algorithm. |
 | `references/season-plan.md` | Multi-week outlines from now to the event. |
 | `references/coaching-model.md` | The principles: easy-heavy week, blocks, age spacing, session shapes. |
+| `references/hill-climb.md` | Hill climb races (one timed climb, 3–20 min): duration decides the limiter, VO2max and race-duration efforts, threshold maintenance, weight, warm-up and pacing. |
+| `references/heat-training.md` | Heat sessions with a core-temperature sensor: the block then maintenance, who and when, the core zone, the stops, the drink. |
+| `references/ultra-distance.md` | Ultra events (8 h+, 12/24 h, bikepacking races): durability, intensity split, long rides and back-to-backs, race simulation, taper, pacing, fuelling. |
 | `references/planning-rules.md` | Hard constraints, sequencing, the push/hold decision, age and level tables, validator codes. |
 | `references/interval-catalog.md`, `references/running-catalog.md` | Sessions, rotation per block, progression steps. |
 | `references/running-model.md` | Running zones, weekly structures per distance, runner-specific rules. |

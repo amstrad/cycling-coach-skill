@@ -105,6 +105,44 @@ The deload week keeps one session of the pair at step 1 with about two-thirds of
 - **Purpose:** specificity in the last 3–4 weeks before an event; replaces one key session.
 - **Avoid:** more than once a week; inside the taper.
 
+## Bike — indoor variants
+
+On the trainer there is no coasting, cooling is worse and the monotony raises RPE, so a key or long session indoors
+keeps its longest unbroken work block within **20 min for tempo, 15 min for sweet spot, 10 min for threshold and
+20 min for race-specific work** (`indoorMaxBlockMinutes` in `assets/rules.json`). Broken blocks with short
+recoveries give the same time in zone. Contiguous work with no easy part between (two-level, ramps, waves) counts as
+one block. VO2max, anaerobic and sprint work already comes in short reps. Outdoors, a long steady block stays the
+right choice. If no shorter shape fits the day, keep the long block and say why.
+
+Recoveries are 50–55 % FTP, ERG-friendly. Raise reps or sets with the level before lengthening a block.
+
+| Session | Shape | Level 1 → 10 |
+|---|---|---|
+| Tempo short blocks | reps × block @ 80–85 %, 3 min easy | 3 × 10′ → 4 × 12′ → 5 × 15′ |
+| Tempo cadence ladder | each block in thirds at 70–80 / 85–95 / 95–105 rpm, 80–85 %, 3 min easy | 3 × 9′ → 4 × 12′ → 4 × 15′ |
+| Sweet spot short blocks | reps × block @ 88–93 %, 3 min easy | 3 × 8′ → 4 × 12′ → 5 × 15′ |
+| Broken sweet spot | sets × (reps × on @ 88–93 %, 1 min @ 60 %), 4 min easy between sets | 2 × (3 × 4′) → 3 × (3 × 5′) → 3 × (4 × 6′) |
+| Sweet spot waves | sets of (2 min @ 88–90 % + 1 min @ 95–98 %), 4 min easy | 2 × 9′ → 3 × 12′ → 3 × 15′ |
+| Threshold short blocks | reps × block @ 95–100 %, 3 min easy | 4 × 6′ → 5 × 8′ → 5 × 10′ |
+| Oscillating threshold | sets of 2 × (3 min @ 95 % + 1 min @ 105 %), 4 min easy | 3 × 8′ → 4 × 8′ → 5 × 8′ |
+| Threshold ladder | 6′ @ 96–100 %, 4′ @ 98–102 %, 2′ @ 100–104 %, 2 min easy between rungs, 5 min between sets | 1 → 2 → 3 sets |
+| Threshold with micro-rests | reps × (4′ @ 97–102 %, 30 s @ 55 %, 4′), 3 min easy | 3 → 4 → 5 reps |
+| Race blocks (Peak) | reps × block @ 85–90 % with a 20 s surge @ 120 % every 3 min, 4 min easy | 2 × 9′ → 3 × 12′ → 3 × 15′ |
+
+## Bike — interval lengths at any level
+
+Each system offers short and long pieces at every level: the block length stays fixed and the level moves only the
+reps (and the rest stays the same). Use them to give the same work in a different shape, a short climb or a long one.
+Blocks over the indoor cap are for the road.
+
+| System (target) | Block → reps at level 1 / 5 / 10 · rest |
+|---|---|
+| Tempo (80–85 %) | 5′ → 4/9/16 · 1′; 8′ → 3/6/10 · 2′; 10′ → 2/4/8 · 2′; 15′ → 2/3/5 · 3′; 20′ → 1/2/4 · 5′; 30′ → 1/2/3 · 5′ |
+| Sweet spot (88–93 %) | 5′ → 3/8/14 · 1′; 8′ → 2/5/9 · 2′; 10′ → 2/4/7 · 3′; 15′ → 1/3/5 · 4′; 20′ → 1/2/4 · 5′; 30′ → 1/1/2 · 6′ |
+| Threshold (97–102 %; 20′ at 95–100 %) | 3′ → 4/10/15 · 1′; 5′ → 3/6/9 · 2′; 8′ → 2/4/6 · 3′; 10′ → 1/3/5 · 3′; 15′ → 1/2/3 · 5′; 20′ → 1/2/2 · 6′ |
+| VO2max | 1′ @ 118–120 % → 6/12/18 · 1′; 6′ @ 106–108 % → 2/3/4 · 4′; 8′ @ 106–108 % → 2/3/3 · 4′ |
+| Anaerobic | 90 s @ 125–130 % → 3/5/8 · 3′; 2′ @ 121–125 % → 2/4/6 · 4′ |
+
 ## Bike — easy and supporting
 - **Avoid:** inside the first week of a block, within 72 h of a race, or for riders over 50 without a full easy day each side.
 

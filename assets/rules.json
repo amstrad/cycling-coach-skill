@@ -21,6 +21,14 @@
     "longRunMin": 90
   },
 
+  "indoorMaxBlockMinutes": {
+    "description": "On the trainer, the longest unbroken work block of a key or long session, by system. Break longer work into blocks with short recoveries.",
+    "tempo": 20,
+    "sweetSpot": 15,
+    "threshold": 10,
+    "raceSpecific": 20
+  },
+
   "sessions": {
     "rest":                  { "sport": "any",  "class": "rest",      "tss": 0 },
     "recovery-spin":         { "sport": "bike", "class": "easy",      "tssPerHour": 30 },
@@ -197,14 +205,80 @@
       { "zone": "Z4", "min": 95, "max": 102 }, { "zone": "Z5", "min": 103 }
     ],
     "bikeHrPctLthr": [
-      { "zone": "Z1", "max": 80 }, { "zone": "Z2", "min": 81, "max": 89 }, { "zone": "Z3", "min": 90, "max": 93 },
-      { "zone": "Z4", "min": 94, "max": 99 }, { "zone": "Z5", "min": 100 }
+      { "zone": "Z1", "max": 67 }, { "zone": "Z2", "min": 68, "max": 83 }, { "zone": "Z3", "min": 84, "max": 94 },
+      { "zone": "Z4", "min": 95, "max": 105 }, { "zone": "Z5", "min": 106 }
     ]
+  },
+
+  "heat": {
+    "minMinutes": 50,
+    "maxMinutes": 90,
+    "block": { "weeks": 2, "maxWeeks": 3, "perWeek": 4, "minSessions": 5 },
+    "maintenancePerWeek": { "general": 1, "base": 1, "build": 1, "peak": 1, "recovery": 0, "transition": 0, "taper": 0, "raceWeek": 0 },
+    "bufferDays": 1,
+    "raceBufferDays": 7,
+    "protocol": {
+      "warmupMinutes": 15,
+      "coreTargetC": 38.5,
+      "coreZoneC": [38.5, 39.0],
+      "minutesInZone": 40,
+      "heatMaxMinutes": 75,
+      "coreEaseC": 39.0,
+      "coreStopC": 39.5,
+      "hrPctMax": [75, 80],
+      "drinkLitresPerHour": [1.0, 2.0],
+      "cooldownMinutes": 10
+    }
   },
 
   "powerProfile": {
     "explosive": { "surgeMin": 1.8, "burstMin": 3.8 },
     "steady": { "surgeMax": 1.45, "ceilingMax": 1.12 },
-    "ftpLikelyLowCeiling": 1.30
+    "ftpLikelyLowCeiling": 1.30,
+    "pyramid": {
+      "displayHistoryDays": 90,
+      "recommendHistoryDays": 300,
+      "topWindowDays": 84,
+      "baseWindowDays": 180,
+      "topWeights": { "burst": 0.25, "surge": 0.35, "ceiling": 0.40 },
+      "qualifying": { "burst": 2.5, "surge": 1.2, "ceiling": 1.02 },
+      "thresholdShare": 0.95,
+      "knots": {
+        "burst": [[2.60, 0], [3.40, 0.25], [3.80, 0.75], [4.20, 1]],
+        "surge": [[1.30, 0], [1.45, 0.25], [1.80, 0.75], [1.95, 1]],
+        "ceiling": [[1.05, 0], [1.12, 0.25], [1.25, 0.75], [1.32, 1]],
+        "thresholdMinutes": [[20, 0], [30, 0.25], [50, 0.75], [60, 1]]
+      },
+      "words": { "tilt": 0.25, "strength": 0.60 },
+      "limiter": { "max": 0.35, "gap": 0.20 }
+    },
+    "base": {
+      "ifExpected": [[1, 0.90], [2, 0.86], [4, 0.78], [6.5, 0.72], [10, 0.66], [16, 0.58]],
+      "indexKnots": [[0.78, 0], [0.88, 0.25], [1.00, 0.75], [1.08, 1]],
+      "minRideHours": 3,
+      "fallbackRideHours": 2,
+      "minPowerCoverage": 0.90,
+      "longRides": 3,
+      "fadePerMj": 0.03,
+      "fadeFloor": 0.80,
+      "fadeMinLateShare": 0.80,
+      "fadeKnots": [[0.92, 0], [0.96, 0.25], [1.02, 0.75], [1.06, 1]],
+      "fadeShorterShare": 0.75,
+      "decouplingKnots": [[10, 0], [7, 0.25], [4, 0.75], [2, 1]],
+      "decoupling": { "viMax": 1.30, "ifRange": [0.60, 0.80], "windowHours": 3, "minWindowHours": 2, "leadInMinutes": 10, "hrCoverage": 0.90, "stopSplitSeconds": 600, "halfBalanceMax": 0.10, "halfIfRange": [0.60, 0.80], "driftFloorPct": -3, "rides": 5, "minRides": 2 },
+      "limiterMinSources": 2,
+      "limiterMaxMean": 0.35,
+      "limiterVetoSource": 0.60
+    },
+    "radar": {
+      "burst": [1.6, 2.8, 4.5],
+      "surge": [1.15, 1.55, 2.10],
+      "ceiling": [1.00, 1.18, 1.35],
+      "thresholdMinutes": [10, 35, 70],
+      "fade": [0.92, 1.00, 1.06],
+      "decouplingPct": [12, 6, 1],
+      "longIndex": [0.80, 0.92, 1.10],
+      "amateurBand": [0.3, 0.7]
+    }
   }
 }

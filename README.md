@@ -144,7 +144,7 @@ The skill's knowledge is split into prose for agents and data for code. Both des
 
 | Path | Contents |
 |---|---|
-| `assets/rules.json` | Every planning number: session classes and load estimates, rotation tables, progression steps, age and level limits, load and ramp caps, running caps, tapers, phases, and zones. |
+| `assets/rules.json` | Every planning number: session classes and load estimates, rotation tables, progression steps, age and level limits, load and ramp caps, running caps, tapers, phases, zones, indoor block caps, the heat protocol, and the power-profile pyramid. |
 | `assets/athlete-profile.schema.json` | JSON Schema for the athlete profile. |
 | `assets/week-plan.schema.json` | JSON Schema for a structured week plan. |
 | `scripts/validate-week.mjs` | A dependency-free validator that checks a week plan against `rules.json` and reports stable error codes. |
@@ -177,6 +177,9 @@ Exit code 0 means no errors, 1 means rule errors, and 2 means unreadable input. 
 | `season-plan.md` | Multi-week outlines and re-planning. |
 | `coaching-model.md` | Limiters, the easy-heavy week, blocks, recovery by age, and session shapes. |
 | `power-profiles.md` | Explosive, balanced, or steady from the power curve. |
+| `hill-climb.md` | Hill climb races: training by climb duration, race-duration efforts, warm-up, and pacing. |
+| `ultra-distance.md` | Ultra events of 8 h or more: durability, long rides, race simulation, pacing, and fuelling. |
+| `heat-training.md` | Heat sessions for riders with a core-temperature sensor. |
 | `interval-catalog.md` | Cycling sessions, per-block rotation, and progression steps. |
 | `running-model.md` | Running zones, weekly structures for 5k to marathon, and runner-specific rules. |
 | `running-catalog.md` | Running sessions, progressions, rotation per distance, and example weeks. |

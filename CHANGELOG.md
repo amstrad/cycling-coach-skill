@@ -2,6 +2,24 @@
 
 Notable changes are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Coaching knowledge (`references/`)
+
+- New guides: `hill-climb.md` (one timed climb), `ultra-distance.md` (events of 8 h or more), and `heat-training.md` (heat sessions with a core-temperature sensor).
+- `interval-catalog.md`: indoor variants with a cap on the longest unbroken work block, and fixed interval lengths at every level.
+- `gym-catalog.md`: dumbbell and kettlebell substitutions, and inspiratory muscle training.
+- `power-profiles.md`: hill-climb and ultra objectives, and the three-tier rider-shape pyramid.
+- `fuelling.md`: a row for efforts of 12 h or more. `periodization.md`: a pointer to the ultra taper.
+
+### Changed
+
+- Cycling heart-rate zones now use Coggan's five bands (Z2 = 68–83 % LTHR, was 81–89 %), in `testing-and-zones.md` and `zones.bikeHrPctLthr`. The guide also says how to estimate LTHR and HRmax when they are missing.
+
+### Rules and tooling
+
+- `assets/rules.json`: new `indoorMaxBlockMinutes`, `heat`, and `powerProfile.pyramid`, `base`, and `radar` blocks.
+
 ## [1.0.1] - 2026-10-21
 
 ### Documentation

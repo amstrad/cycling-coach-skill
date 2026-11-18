@@ -11,6 +11,7 @@ The skill does not write diet plans. It adds short, standard cues to sessions so
 | 60–90 min | 30–60 g/h | 500–750 ml/h |
 | 90 min–3 h | 60–90 g/h | 500–750 ml/h, with sodium in heat |
 | > 3 h, races, marathon | 80–90 g/h (up to 120 g/h only if gut-trained), glucose + fructose mixes above 60 g/h | 500–1000 ml/h, 300–600 mg sodium/l in heat |
+| ≥ 12 h, ultra-distance, multi-day | 45–60 g/h (aim for 60), little and often, with real food; the low pace runs mostly on fat and the gut sets the ceiling (`ultra-distance.md`) | to thirst and heat, with sodium |
 
 Marathon and long-event plans include gut training: practise the race-day intake on every long run or ride in the final 8 weeks.
 

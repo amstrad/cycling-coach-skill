@@ -43,3 +43,21 @@ Plyometrics count as a high-intensity leg session: never on consecutive days wit
 - In-season (Build, Peak): one session, 2 lifts at maintenance load; drop plyometrics in the taper; nothing heavy in race week.
 - Off-season (Transition, Base): two sessions, progressive load, this is where strength is actually built.
 - Put each chosen exercise in the gym table from `schedule-format.md`: name, sets × reps, load/cue, rest.
+- Dumbbells or a kettlebell load the same patterns as the bodyweight moves: a goblet squat for the squat, the Bulgarian
+  split squat for the lunge, a dumbbell Romanian deadlift for the single-leg hinge, a dumbbell step-up, and a
+  single-arm row in place of the push-up. A band loads the lateral band walk. Pick a weight where the last rep of each
+  set is hard but clean, and add weight when every set is clean.
+
+## Inspiratory muscle training
+
+For an athlete with a breathing trainer (POWERbreathe or similar):
+
+- **Dose:** one set of 30 slow, full breaths against the load a day, resting a few seconds between breaths if needed.
+  Most studies used two sets a day; one is the adherence compromise. Six weeks builds the effect; after that it is
+  maintenance.
+- **Load, the rule of thirty:** set the level so the 30th breath is hard but complete; when 30 come easily, go up one
+  level.
+- **Through the season:** daily while building (general, base, build, transition); three days a week while peaking,
+  tapering or recovering; none in race week or the day before a race. On a strength day, the set goes into the
+  session's warm-up and is the day's set.
+- **Caution:** not in the hour before a hard ride, and stop if dizzy.

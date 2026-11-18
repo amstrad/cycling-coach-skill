@@ -49,13 +49,24 @@ Easy days in this skill are capped at 70 % even though Z2 runs to 75 %, so drift
 
 ## Heart-rate zones (% LTHR, cycling)
 
+Coggan's five bands. They put endurance where a cyclist actually rides it: Friel's Z2 (81–89 % LTHR) reads 10–20 bpm high
+on the bike, so an easy ride shows up as tempo.
+
 | Zone | % LTHR |
 |---|---|
-| Z1 | < 81 |
-| Z2 | 81–89 |
-| Z3 | 90–93 |
-| Z4 | 94–99 |
-| Z5 | ≥ 100 |
+| Z1 | < 68 |
+| Z2 | 68–83 |
+| Z3 | 84–94 |
+| Z4 | 95–105 |
+| Z5 | > 105 |
+
+- Round each bound to the nearest bpm; cap the top zones at HRmax when it is known.
+- The athlete's own zones (set by hand or in Intervals.icu) always win over these bands.
+- No LTHR: take LTHR = 0.89 × HRmax and say it is an estimate. No HRmax either: HRmax = 208 − 0.7 × age (Tanaka), an
+  estimate to replace with a test. Never Karvonen.
+- An LTHR above 93 % of HRmax is probably wrong: ask the athlete to check it, change nothing.
+- A power target in Z1–Z4 reads as the HR zone of the same number. Above threshold (power Z5+) there is no honest HR
+  floor: say "above threshold, heart rate lags the effort".
 
 Running HR zones are in `running-model.md`. Running LTHR is usually 5–10 bpm higher than cycling LTHR; never share HR zones across sports.
 
