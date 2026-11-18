@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Machine-readable mirror of the planning numbers in references/. When a guide changes, change this file too; npm test checks both against the examples.",
 
   "classes": {
@@ -183,12 +183,13 @@
     "half-marathon": { "days": [10, 14], "volumeCutPct": [40, 50] },
     "gran-fondo":    { "days": [14, 21], "volumeCutPct": [50, 60], "note": "10-14 days when the event is under 4 h" },
     "marathon":      { "days": [14, 21], "volumeCutPct": [50, 60] },
+    "ultra-distance": { "days": [14, 21], "volumeCutPct": [50, 60] },
     "ageExtraDays":  { "minAge": 50, "days": [3, 4] }
   },
 
   "phases": {
     "order": ["base", "build", "peak", "taper", "race-week"],
-    "peakWeeks": { "default": 3, "long": 4, "longEvents": ["gran-fondo", "marathon"] },
+    "peakWeeks": { "default": 3, "long": 4, "longEvents": ["gran-fondo", "marathon", "ultra-distance"] },
     "buildWeeks": [6, 8],
     "minBaseWeeks": 6
   },

@@ -111,6 +111,8 @@ See `athlete-levels.md` for the classification. In short: beginners earn volume 
 
 | Code | Rule | Level |
 |---|---|---|
+| `SCHEMA_WEEK`, `SCHEMA_DAYS`, `SCHEMA_AGE`, `SCHEMA_LEVEL`, `SCHEMA_PATTERN` | the plan's shape: week id, seven days in order, age and level present, known pattern ids. Checked first; the rules below run only when these pass | error |
+| `AGE_OUT_OF_SCOPE` | under 18 is outside this skill | error |
 | `HI_CONSECUTIVE` | 1 | error |
 | `THREE_HARD_IN_ROW`, `CONSECUTIVE_HARD` | 2, 3 | error |
 | `GAP_HI_HI`, `GAP_HI_HARD`, `GAP_HARD_HARD` | 3 | error |

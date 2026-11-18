@@ -75,7 +75,16 @@ for (const [id, s] of Object.entries(rules.sessions)) {
   if (!rules.classes[s.class]) fail(`session ${id} has unknown class ${s.class}`);
   if (Array.isArray(s.tss) && s.tss.length !== rules.progression.maxStep) fail(`session ${id} needs ${rules.progression.maxStep} tss steps`);
 }
-ok(`rules.json (${Object.keys(rules.sessions).length} sessions, ${rules.age.length} age bands)`);
+{
+  const pkg = JSON.parse(readFileSync(join(ROOT, 'package.json'), 'utf8'));
+  if (rules.version !== pkg.version) fail(`rules.json version ${rules.version} differs from package.json ${pkg.version}`);
+  const profileSchema = JSON.parse(readFileSync(join(ROOT, 'assets/athlete-profile.schema.json'), 'utf8'));
+  for (const t of profileSchema.properties.eventType.enum.filter(Boolean)) if (!rules.taper[t]) fail(`eventType ${t} has no taper in rules.json`);
+  const planRules = readFileSync(join(ROOT, 'references/planning-rules.md'), 'utf8');
+  const validator = readFileSync(join(ROOT, 'scripts/validate-week.mjs'), 'utf8');
+  for (const m of validator.matchAll(/report\.(?:error|warn)\('([A-Z_]+)'/g)) if (!planRules.includes(`\`${m[1]}\``)) fail(`validator code ${m[1]} is missing from the table in planning-rules.md`);
+}
+ok(`rules.json (${Object.keys(rules.sessions).length} sessions, ${rules.age.length} age bands, version ${rules.version})`);
 
 // 3a. Every `source` in rules.json points at an existing row of references/evidence.md
 const evidence = readFileSync(join(ROOT, 'references/evidence.md'), 'utf8');

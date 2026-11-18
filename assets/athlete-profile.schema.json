@@ -23,7 +23,7 @@
     "level": { "enum": ["beginner", "intermediate", "advanced", null] },
     "trainingAgeYears": { "type": ["number", "null"], "minimum": 0 },
     "weeklyHours": { "type": ["number", "null"], "minimum": 0 },
-    "eventType": { "enum": ["criterium", "road-race", "gran-fondo", "time-trial", "climb", "5k", "10k", "half-marathon", "marathon", null] },
+    "eventType": { "enum": ["criterium", "road-race", "gran-fondo", "time-trial", "climb", "ultra-distance", "5k", "10k", "half-marathon", "marathon", null] },
     "eventDate": { "type": ["string", "null"], "format": "date" },
     "thresholdPaceSecPerKm": { "type": ["integer", "null"], "minimum": 120, "maximum": 600 },
     "lthr": { "type": ["integer", "null"], "minimum": 80, "maximum": 220 },

@@ -29,7 +29,7 @@ Only `name`, `language`, `units`, `sport`, `objective`, and `age` are required. 
 | `level` | string or null | `beginner`, `intermediate`, `advanced`, or null to derive it with `athlete-levels.md`. |
 | `trainingAgeYears` | number | Years of consistent training in the sport. Feeds the level score. |
 | `weeklyHours` | number | Typical training hours per week across sports. Feeds the level score and the load bands. |
-| `eventType` | string or null | `criterium`, `road-race`, `gran-fondo`, `time-trial`, `climb`, `5k`, `10k`, `half-marathon`, `marathon`, or null. Sets the phase emphasis and the taper. |
+| `eventType` | string or null | `criterium`, `road-race`, `gran-fondo`, `time-trial`, `climb`, `ultra-distance` (350 km or more, 20 h or more in one push, or multi-day; `ultra-distance.md`), `5k`, `10k`, `half-marathon`, `marathon`, or null. Sets the phase emphasis and the taper. |
 | `eventDate` | string or null | ISO date of the A-event. Weeks-to-go selects the phase in `periodization.md`. |
 | `thresholdPaceSecPerKm` | integer or null | Running threshold pace in seconds per km (stored metric even for imperial users). Anchors every run zone. |
 | `lthr` | integer or null | Lactate-threshold heart rate (bpm). Used for HR cues and hrTSS when pace or power is missing. |
