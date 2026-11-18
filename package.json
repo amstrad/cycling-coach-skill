@@ -10,6 +10,7 @@
   "scripts": {
     "test": "node tools/check-skill.mjs",
     "validate": "node scripts/validate-week.mjs",
+    "check-dois": "node tools/check-dois.mjs",
     "build": "npm test && ./tools/package-skill.sh"
   },
   "repository": {
