@@ -1,0 +1,65 @@
+# Evidence — the papers behind the guides
+
+One row per paper. The guides cite a row by its id, for example (E04), and rules in `assets/rules.json` that rest on a paper carry a `source` field such as `references/evidence.md#E03`. Every row was checked against the abstract or the full text; the finding column says only what that paper supports.
+
+## Evidence levels
+
+| Level | Meaning |
+|---|---|
+| **Strong** | Systematic review or meta-analysis. |
+| **Moderate** | Narrative or scholarly review, methodological review, or expert opinion in a peer-reviewed journal. It summarises primary studies but does not pool them. |
+| **Weak** | A single study with a small sample, an observational field study, a case study, or a modelling study without field validation. |
+
+A weak row can still be the best evidence there is. Use it as a direction, state the uncertainty, and never turn it into a hard rule.
+
+## Durability
+
+| Id | Reference | Finding | Level | Link | Applied in |
+|---|---|---|---|---|---|
+| E01 | Maunder E, Seiler S, Mildenhall MJ, Kilding AE, Plews DJ (2021). The importance of 'durability' in the physiological profiling of endurance athletes. *Sports Med* 51(8):1619–1628. | Names the concept: thresholds measured fresh shift during prolonged exercise, and durability is when that deterioration starts and how large it gets. | Moderate | [doi:10.1007/s40279-021-01459-0](https://doi.org/10.1007/s40279-021-01459-0) | `ultra-distance.md`, `testing-and-zones.md` |
+| E02 | Jones AM (2024, online 2023). The fourth dimension: physiological resilience as an independent determinant of endurance exercise performance. *J Physiol* 602(17):4113–4128. | Critical power fell by about 10 % on average after 2 h of heavy-intensity cycling, and the individual change ranged from under 1 % to about 32 %. | Moderate | [doi:10.1113/JP284205](https://doi.org/10.1113/JP284205) | `ultra-distance.md` |
+| E03 | Hunter B, Maunder E, Jones AM, Gallo G, Muniz-Pumares D (2025). Durability as an index of endurance exercise performance: methodological considerations. *Exp Physiol* 110(11):1612–1624. | A durability test is only comparable when the prior work (intensity and duration), carbohydrate intake, and environment are held constant; maximal efforts fresh and fatigued belong on separate days. It prescribes no single protocol. | Moderate | [doi:10.1113/EP092120](https://doi.org/10.1113/EP092120) | `testing-and-zones.md`, `ultra-distance.md`, `assets/rules.json` `durabilityTest` |
+| E04 | Sánchez-Jiménez JL, Salas-Montoro JA, Mateo-March M, Priego-Quesada JI, Zabala M, Pérez-Díaz JJ (2026, online 2025). Is intensity the most important factor in determining the amount of prior work accumulated that affects cyclists' acute durability? A systematic review. *Eur J Appl Physiol* 126(1):163–179. | Across 21 studies, work done above critical power cut later power more, and after fewer kJ, than the same or more work at low intensity (declines of 10–20 % after 2.5–15 kJ/kg of high-intensity work). kJ alone is not enough to describe prior fatigue. | Strong | [doi:10.1007/s00421-025-05885-0](https://doi.org/10.1007/s00421-025-05885-0) | `ultra-distance.md`, `hill-climb.md`, `testing-and-zones.md` |
+| E05 | Barsumyan A, Soost C, Burchard R (2025). Enhanced durability predicts success in amateur road cycling: evidence of power output declines. *Front Sports Act Living* 7:1530162. | In 14 amateur cyclists, 20-min power after 1,000 kJ at 80 % of fresh 20-min power dropped 6.5 % in the more successful group and 12.5 % in the less successful one; 5-min power did not separate the groups. The study was underpowered. | Weak | [doi:10.3389/fspor.2025.1530162](https://doi.org/10.3389/fspor.2025.1530162) | `testing-and-zones.md`, `ultra-distance.md` |
+| E06 | Spragg J, Leo P, Swart J (2023). The relationship between physiological characteristics and durability in male professional cyclists. *Med Sci Sports Exerc* 55(1):133–140. | In 10 young professionals, critical power after 5 × 8 min at 105–110 % of critical power, expressed as a share of the fresh value, was related to laboratory measures such as relative peak power. | Weak | [doi:10.1249/MSS.0000000000003024](https://doi.org/10.1249/MSS.0000000000003024) | `testing-and-zones.md` |
+| E07 | Leo P, Spragg J, Mujika I, Giorgi A, Lorang D, Simon D, Lawley JS (2021). Power profiling, workload characteristics, and race performance of U23 and professional cyclists during the multistage race Tour of the Alps. *Int J Sports Physiol Perform* 16(8):1089–1095. | In 17 riders, professionals held higher relative power after 1,000–3,000 kJ of work than U23 riders, and the power profile predicted race results where workload measures did not. | Weak | [doi:10.1123/ijspp.2020-0381](https://doi.org/10.1123/ijspp.2020-0381) | `ultra-distance.md` |
+
+## Climbing
+
+| Id | Reference | Finding | Level | Link | Applied in |
+|---|---|---|---|---|---|
+| E08 | Jobson SA, Woodside J, Passfield L, Nevill AM (2008). Allometric scaling of uphill cycling performance. *Int J Sports Med* 29(9):753–757. | On a 5.3 km road climb at 5.4 %, speed followed maximal power divided by body mass raised to about 1.0, and the curved relationship showed that air resistance still mattered at that gradient. | Weak | [doi:10.1055/s-2007-989441](https://doi.org/10.1055/s-2007-989441) | `hill-climb.md` |
+| E09 | Horvath M, Andersson EP (2025). Optimal body mass normalization of power output for accurate prediction of estimated cycling performance over complex time-trial courses. *Front Sports Act Living* 7:1599319. | In a model, the mass exponent that best ranks riders rose with gradient: about 0.38 on the flat, 0.72 on a moderate climb, and 0.89 on a steep one. It was checked against modelled, not measured, performance. | Weak | [doi:10.3389/fspor.2025.1599319](https://doi.org/10.3389/fspor.2025.1599319) | `hill-climb.md` |
+| E10 | Hovorka M, Leo P, Simon D, Prinz B, Nimmerichter A (2022). Effects of flat and uphill cycling on the power-duration relationship. *Int J Sports Med* 43(8):701–707. | In 13 well-trained athletes, 1-min power and W′ were higher uphill (9.8 %) than on the flat (0.6 %). Critical power did not differ on average, but individual differences were too wide to treat the two conditions as equivalent. | Weak | [doi:10.1055/a-1749-5884](https://doi.org/10.1055/a-1749-5884) | `hill-climb.md`, `testing-and-zones.md` |
+| E11 | Chorley A, Lamb KL (2020). The application of critical power, the work capacity above critical power (W′), and its reconstitution: a narrative review of current evidence and implications for cycling training prescription. *Sports* 8(9):123. | W′ is spent in proportion to power above critical power and refills slowly and non-linearly below it, more slowly after repeated bouts. Current W′-balance models rest on small samples and are not precise enough to pace by in real time. | Moderate | [doi:10.3390/sports8090123](https://doi.org/10.3390/sports8090123) | `hill-climb.md`, `ultra-distance.md` |
+
+## Sleep in multi-day events
+
+| Id | Reference | Finding | Level | Link | Applied in |
+|---|---|---|---|---|---|
+| E12 | Lahart IM, Lane AM, Hulton A, Williams K, Godfrey R, Pedlar C, Wilson MG, Whyte GP (2013). Challenges in maintaining emotion regulation in a sleep and energy deprived state induced by the 4800 km ultra-endurance bicycle race; the Race Across AMerica (RAAM). *J Sports Sci Med* 12(3):481–488. | In one four-man team, sleep fell from about 7 h to about 2 h a day, riders were in their best emotional state less than half the time, all were in negative energy balance throughout, and 6-h rest blocks gave far more actual sleep than 3-h blocks. | Weak | [PMC3772592](https://pmc.ncbi.nlm.nih.gov/articles/PMC3772592) | `ultra-distance.md` |
+| E13 | Smith A, Buadze A, Colangelo J, Liebrenz M (2023). A narrative review of sleep deprivation in ultra-endurance cycling. *Sports Psychiatry* 2(1):31–36. | Seven studies agree that sleep deprivation is a routine part of ultra-cycling races, and the authors raise its mental-health cost. Checked from the abstract only; it gives no sleep schedule. | Weak | [doi:10.1024/2674-0052/a000032](https://doi.org/10.1024/2674-0052/a000032) | `ultra-distance.md` |
+| E14 | Hurdiel R, Kurinec C, Pezé T, Bonduelle C, Bourlois V (2026). The cognitive costs of sleep deprivation in ultra-endurance cycling: insights from the Race Across France. *J Sleep Res* 35(4):e70295. | In 23 finishers of a 2,588 km race (mean sleep about 3.8 h per 24 h), riders who slept more per day finished higher, less sleep went with slower reactions, sleepiness peaked around midnight, and it built up day on day in riders averaging under about 5.3 h. Observational: it cannot show that sleep caused the result. | Weak | [doi:10.1111/jsr.70295](https://doi.org/10.1111/jsr.70295) | `ultra-distance.md` |
+
+## Carbohydrate during long efforts
+
+| Id | Reference | Finding | Level | Link | Applied in |
+|---|---|---|---|---|---|
+| E15 | Morton JP, Fell JM, Gonzalez JT, Hearris MA, Podlogar T, Pugh JN, Wallis GA (2026). From metabolism to medals: contemporary perspectives and revisiting carbohydrate guidelines for fuelling endurance athletes during exercise. *J Nutr* 156(5):101442. | Argues that the upper limit could move from 90 toward 120 g/h in trained athletes, while the capacity to use ingested carbohydrate varies widely between people. In events of many hours, reported intakes are mostly 30–66 g/h, and higher intake went with finishing. Some authors declare industry links. | Moderate | [doi:10.1016/j.tjnut.2026.101442](https://doi.org/10.1016/j.tjnut.2026.101442) | `ultra-distance.md`, `fuelling.md` |
+| E16 | Jeukendrup AE, Redegeld M, Martins G, Whitfield J, Burke LM, Mujika I, Dolan E, Gonzalez JT (2026). UCI Sports Nutrition Project: race nutrition for road cycling. *Int J Sport Nutr Exerc Metab* 36:215–232. | For professional road racing: 30–60 g/h in races of 1–2.5 h and 90 g/h beyond that, from mixed glucose and fructose sources, set per rider. Tolerance is trainable. There is little evidence that more than 90 g/h adds benefit, although riders now take it on hard stages. | Moderate | [doi:10.1123/ijsnem.2025-0239](https://doi.org/10.1123/ijsnem.2025-0239) | `ultra-distance.md`, `fuelling.md`, `assets/rules.json` `fuelling` |
+| E17 | Plews DJ, Booth PD, Krieger T, Maunder E (2026). Fuelled or fooled? Examining the evidence and mechanisms behind ultra-high carbohydrate intake in endurance athletes. *Sports Med* 56(10):2367–2388. | Finds no clear extra performance benefit above roughly 60–90 g/h, a growing unused share and gut risk at 120 g/h, and calls promoting intakes above 90 g/h to amateurs premature. | Moderate | [doi:10.1007/s40279-026-02462-z](https://doi.org/10.1007/s40279-026-02462-z) | `ultra-distance.md`, `fuelling.md`, `assets/rules.json` `fuelling` |
+
+## Coaching-practice sources
+
+These are named in the guides as the origin of practical advice. They are articles, forum threads, and coaching sites, not peer-reviewed studies, and they were not re-checked in the review that produced the tables above. Treat everything that rests on them as **Weak**.
+
+| Guide | Sources named there |
+|---|---|
+| `ultra-distance.md` | Race Ready Cycling Training; the TrainerRoad forum thread "Ultra-endurance training" (2022); Uphill Athlete; BarrUltra; WUCA; Cyclite. |
+| `hill-climb.md` | Roadman Cycling, "Cycling hill climb racing guide", which cites Andy Coggan's modelling. |
+
+## Adding a row
+
+1. Read at least the abstract and write the finding in your own words, in one sentence, without quoting.
+2. Give the next free id, the level from the table above, and a DOI link.
+3. Cite the id where the guide uses it. A rule in `assets/rules.json` gets a `source` field only when the paper supports that exact rule.

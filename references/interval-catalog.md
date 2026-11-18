@@ -105,6 +105,12 @@ The deload week keeps one session of the pair at step 1 with about two-thirds of
 - **Purpose:** specificity in the last 3–4 weeks before an event; replaces one key session.
 - **Avoid:** more than once a week; inside the taper.
 
+### Durability test (optional benchmark)
+- **Shape:** fixed prior work at a steady endurance-to-tempo power, then a maximal 20-min effort. The protocol and
+  its conditions are in `testing-and-zones.md`.
+- **Purpose:** measures how much 20-min power is left after work, for events of 4 h or more.
+- **Avoid:** the same day as an FTP test; a build week; changing the prior work or the fuelling between tests.
+
 ## Bike — indoor variants
 
 On the trainer there is no coasting, cooling is worse and the monotony raises RPE, so a key or long session indoors

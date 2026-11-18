@@ -185,8 +185,9 @@ Exit code 0 means no errors, 1 means rule errors, and 2 means unreadable input. 
 | `running-catalog.md` | Running sessions, progressions, rotation per distance, and example weeks. |
 | `gym-catalog.md` | Strength, core, and running-resilience work. |
 | `adjustments.md` | Session scoring and repairing a week after missed or failed sessions. |
-| `testing-and-zones.md` | FTP and threshold-pace tests, zones, and rules for updating them automatically. |
+| `testing-and-zones.md` | FTP and threshold-pace tests, zones, rules for updating them automatically, and an optional durability test. |
 | `fuelling.md` | Fuelling and recovery cues, plus red flags. |
+| `evidence.md` | The papers behind the guides: reference, finding, evidence level, link, and where each is applied. |
 | `intervals-icu.md`, `strava-sync.md`, `garmin-snapshot.md` | The data sources. |
 | `profile-schema.md`, `first-time-setup.md` | Profile fields and setup questions. |
 | `schedule-format.md`, `zwift-xml.md` | Output formats. |
@@ -206,11 +207,13 @@ Run `npm test` to check the skill frontmatter, every file reference, rule consis
 
 When you change a rule, update the guide and `assets/rules.json` together. Then add or adjust an example that shows the change.
 
+When a rule rests on a paper, add the paper to `references/evidence.md` and point the rule's `source` field at its row. `npm test` fails on a `source` or an in-text citation such as (E04) that has no row.
+
 To release, bump `version` in `package.json` and add a `CHANGELOG.md` entry. Then push a matching `vX.Y.Z` tag. The release workflow tests, packages, and publishes `cycling-coach-skill.skill` as a GitHub release.
 
 ## Scope and safety
 
-The skill applies general endurance-training principles from public coaching practice and sports-science literature. It is not medical advice and does not replace a coach or physician. It never prescribes weight loss or diets. It flags warning signs, such as pain that changes your gait, symptoms after illness, or signs of under-fuelling, and recommends seeing a professional.
+The skill applies general endurance-training principles from public coaching practice and sports-science literature; the papers are listed in `references/evidence.md` with their evidence level. It is not medical advice and does not replace a coach or physician. It never prescribes weight loss or diets. It flags warning signs, such as pain that changes your gait, symptoms after illness, or signs of under-fuelling, and recommends seeing a professional.
 
 ## License
 

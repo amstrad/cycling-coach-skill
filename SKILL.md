@@ -34,8 +34,9 @@ Turn a short exchange into a training week an athlete can act on: a seven-day ma
 | `references/running-model.md` | Running zones, weekly structures per distance, runner-specific rules. |
 | `references/gym-catalog.md` | Strength and core for cyclists and runners. |
 | `references/adjustments.md` | Scoring sessions; repairing the week after missed, moved, or failed sessions. |
-| `references/testing-and-zones.md` | Tests, zones, and rules for updating FTP and threshold pace. |
+| `references/testing-and-zones.md` | Tests, zones, and rules for updating FTP and threshold pace; the optional durability test. |
 | `references/fuelling.md` | Fuelling and recovery cues; red flags to surface. |
+| `references/evidence.md` | The papers behind the guides: one row per paper with its finding and evidence level. Cited as (E04) in the guides and as `source` in `assets/rules.json`. |
 | `references/schedule-format.md`, `references/zwift-xml.md` | Output formats. |
 
 ## Bundled files
@@ -88,6 +89,7 @@ If FTP figures disagree by more than 3 %, say so and ask which to trust. Summari
 - **Level:** `level`, else derive it with `references/athlete-levels.md`.
 - **Phase, block, and week type:** from `eventDate` and `trainingState` with `references/periodization.md`, or from `trainingState.seasonPlan` when one exists.
 - **Anchors:** apply the update rules in `references/testing-and-zones.md`, and check whether a benchmark is due.
+- **Event guide:** for a single timed climb read `references/hill-climb.md`; for an event of 8 h or more read `references/ultra-distance.md`. When the athlete asks why, give the reason and its evidence level from `references/evidence.md`, and never present a weak finding as settled.
 - **Progression:** push, hold, or step down with the decision table in `references/planning-rules.md`.
 
 State the result in at most two lines: profile and focus; level, phase, week type, and whether the progression moves.

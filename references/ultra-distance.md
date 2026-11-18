@@ -12,6 +12,9 @@ Sources:
 The numbers marked *heuristic* are common coaching practice, not taken from those sources. Treat them as
 starting points and adjust them to the rider.
 
+Where a paper supports a point, the text cites its row in `evidence.md`, for example (E04). Most of the evidence
+on ultra-cycling is weak: small field studies and reviews. Read it as a direction, not as a rule.
+
 ## What decides an ultra
 
 - **Durability, not peak power.** The ability to hold a steady, mostly aerobic output for many hours without
@@ -24,6 +27,29 @@ starting points and adjust them to the rider.
   capable of finishing." Routines (eating, clothing, lights, small repairs) must run without thought.
   Pacing works best with small intermediate goals (the next 50 km, the next stop).
 - **Sleep strategy** (24 h and multi-day only): night riding, and when (or whether) to stop.
+
+## Durability
+
+- **What it is.** Thresholds are measured fresh, but they move during a long effort. Durability is how late that
+  deterioration starts and how small it stays (E01).
+- **How large.** Critical power fell by about 10 % on average after 2 h of heavy riding, and between under 1 % and
+  about 32 % from one rider to the next (E02). Better-trained riders lose less: professionals held more of their
+  power after 1,000–3,000 kJ than U23 riders (E07), and the more successful amateurs lost 6.5 % of their 20-min
+  power after 1,000 kJ against 12.5 % (E05, a small study).
+- **Intensity counts, not only kJ.** Work above threshold costs far more later power than the same kJ ridden
+  easy: 10–20 % declines appear after only 2.5–15 kJ per kg of hard work, while similar or larger amounts of easy
+  work cost less (E04). Record two things about the work before a late effort: the total (as kJ per kg, to compare
+  riders) and how much of it was above threshold.
+- **Adjusting targets late in a ride.** There is no table that fits everyone, because the spread between riders is
+  so wide. Use the rider's own fade: the best 20 min of the last hour of long rides against the fresh 20-min best
+  (`coaching-model.md`). *Heuristic:* scale tempo and threshold targets placed after 2–3 h by that ratio (a rider
+  who holds 93 % late rides late blocks at 93 % of the fresh target), and let RPE and heart rate overrule the
+  number. Re-measure it; do not assume it.
+- **The app's expected fade** (`powerProfile.base.fadePerMj` in `assets/rules.json`) counts kJ only. Read it with
+  care for a ride that held hard efforts, which cost more than their kJ.
+- **Fuel changes the result.** Carbohydrate during the ride reduces the fall in threshold power (E03), so judge
+  durability on rides fuelled the way the event will be.
+- To measure it on purpose, use the optional durability test in `testing-and-zones.md`.
 
 ## Intensity distribution
 
@@ -66,7 +92,33 @@ starting points and adjust them to the rider.
 
 - **12 h:** about 60–70 % of FTP on average. **24 h:** about 55–65 %. Multi-day: lower again, set by sleep and terrain.
 - Use heart rate drift and RPE as the governors late in the event. Power falls with fatigue, heat and altitude.
-- **Do not chase the start.** Early surges are paid for many hours later.
+- **Do not chase the start.** Early surges are paid for many hours later. Work above threshold lowers later power
+  more than its kJ suggest (E04), and each surge spends work capacity that refills slowly, and more slowly every
+  time it is emptied (E11).
+- **Expect the ceiling to come down.** After several hours the power that feels like tempo is lower than it was
+  fresh (see Durability). Ride climbs late in the event by effort, not by the fresh number.
+
+## Sleep in multi-day events
+
+The evidence is weak (one team, one race, and a short review), but it points one way: sleep is part of the
+pacing plan, not time lost.
+
+- **Sleep loss is the norm, and it has a cost.** Studies of ultra-cycling races agree that riders sleep very
+  little (E13). In a four-man RAAM team sleep fell from about 7 h to about 2 h a day, and riders were in their
+  best emotional state less than half the time, with the sharpest change between the first and second day (E12).
+- **More sleep went with a better result.** In 23 finishers of a 2,588 km race, riders who slept more per day
+  finished higher, and less sleep went with slower reactions (E14). The study is observational, so it cannot
+  prove that sleeping more made them faster. It does say that skipping sleep is not a reliable way to gain places.
+- **When.** Sleepiness peaked around midnight and the urge to sleep was strongest from midnight to 04:00 (E14).
+  Plan the main stop there instead of fighting through it.
+- **How long.** Sleepiness built up day on day in riders averaging under about 5.3 h per 24 h (E14). Longer rest
+  blocks gave far more real sleep than short ones in the RAAM team (E12). Neither figure is a prescription; they
+  set the expectation that very short sleep accumulates.
+- **Safety first.** Slow reactions on a descent or in traffic are the real risk. A rider who is nodding off,
+  weaving, or seeing things stops and sleeps, whatever the plan says.
+- **Plan the lows.** Expect a low mood on the second day and decide in advance what to do with it: eat, sleep,
+  then reassess. Do not decide to abandon at night.
+- **Practise it.** The race simulation includes the night and one planned sleep stop.
 
 ## Fuelling (with `fuelling.md`)
 
@@ -81,6 +133,24 @@ starting points and adjust them to the rider.
   allows eating, eat less on long climbs and more at the top.
 - **Top-ups and sleep:** in events over a day, an extra 35–60 g, mostly complex, every 6–8 h; before a sleep break,
   a large, quickly absorbed carbohydrate meal to refill glycogen.
+- **What the papers say, by hours of effort.** These ranges are for orientation. Intake is individual, it depends
+  on what the gut tolerates and on the pace, and it is practised in training before it is used in an event. They
+  are not a prescription.
+
+  | Effort | Range in the literature | Note |
+  |---|---|---|
+  | 1–2.5 h | 30–60 g/h | Professional road racing guidance (E16). |
+  | 2.5–6 h | up to about 90 g/h, from glucose and fructose together | Well supported up to 90 g/h (E16, E17). |
+  | Over 6 h, at ultra pace | mostly 30–66 g/h reported in the field | Higher intake went with finishing in field studies, most of them in ultra-running (E15). This is where the 45–60 g/h above sits. |
+
+- **The debate above 90 g/h.** Professionals now take 120 g/h on hard stages, and one review argues that the
+  upper limit could move toward 120 g/h in trained athletes (E15). Two others find little or no evidence of extra
+  benefit above 90 g/h, a growing share that is not used, and more gut trouble, and call it premature for amateurs
+  (E16, E17). The capacity to use ingested carbohydrate also varies widely between riders (E15). For an ultra,
+  where the pace is low and the gut is the limit, do not plan above 90 g/h; mention the debate only when the
+  rider asks.
+- **Energy deficit is normal in multi-day events.** Every rider in the RAAM team was in negative energy balance
+  throughout (E12). Eating is a task to plan, not something appetite will take care of.
 - **Fat oxidation is trained by volume, not by fasting.** Consistent Z1–Z2 hours raise fat use at a given pace.
   Do not prescribe fasted or low-carbohydrate rides for an ultra plan; `fuelling.md` allows them only as an
   optional easy Z2 ride under 90 min, never for beginners. Fat oxidises best with some carbohydrate present ("fat
@@ -116,3 +186,7 @@ starting points and adjust them to the rider.
 - **Long ride:** grows toward 5–10 h (bounded by availability). Back-to-back weekends from build on. One race
   simulation at about 50 % of event duration (capped by availability and about 24 h) about 3 weeks out.
 - **Taper:** 14–21 days per `periodization.md`. Intervals kept until 3–4 days before, at half the load in the last week.
+- **Fuelling check:** a session's planned `carbGPerHour` above `fuelling.carbGPerHourEvidenceMax` in
+  `assets/rules.json` draws the validator warning `CARB_ABOVE_EVIDENCE`.
+- **Durability:** track the late-ride fade from long rides; the optional `durability-test` session measures it on
+  purpose (`testing-and-zones.md`).

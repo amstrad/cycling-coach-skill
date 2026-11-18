@@ -14,6 +14,47 @@ Every target in the plan is a percentage of an anchor: FTP for the bike, thresho
 
 Rules: test fresh (after a rest day, end of a deload week), same trainer, same mode (indoor or outdoor), same time of day. Do not test inside 7 days of illness or in a build week. Pace the 20-min test: first 5 min at the expected FTP + 5 %, then build.
 
+## Durability test (optional)
+
+FTP says what a rider can hold fresh. This test says how much of it is left after work, which decides long events
+(`ultra-distance.md`). It is for intermediate and advanced riders preparing an event of 4 h or more. Pattern id
+`durability-test`, a benchmark like any other.
+
+There is no agreed protocol. A review of the methods (E03 in `evidence.md`) sets out what makes a result
+comparable, and this test follows it:
+
+| Choice | What to do | Why (E03) |
+|---|---|---|
+| The measure | A maximal 20-min effort, compared with the fresh 20-min test. Report the fatigued power as a share of the fresh one. | The same measure as the limiter check in `coaching-model.md`; a smaller drop means better durability. |
+| Fresh and fatigued | On separate days, both rested, within about two weeks, with no change of FTP between them. | Two maximal efforts in one day disturb each other. |
+| The prior work | Fix it once and repeat it exactly: the same duration and the same power, set from the rider's threshold, not from a share of maximum. | Longer and harder prior work lowers the result more. An unrepeatable ride gives an unreadable number. |
+| Describe the work twice | Total kJ per kg, and how much of it was above threshold. | The same kJ cost more when they include hard efforts (E04). |
+| Enough to show a change | The prior work must be long enough to lower the 20-min power at all. | A test that shows no drop cannot show an improvement. |
+| Fuel | The same carbohydrate before and during, and the same caffeine, every time. Drink to thirst. | Carbohydrate reduces the fall in threshold power, so a change of fuelling reads as a change of fitness. |
+| Conditions | The same bike, power meter, position, terrain (flat or climb), and similar temperature; indoors when possible. | Heat, gradient, and position each move the result (E10). |
+| First attempt | Treat it as practice. | Pacing a maximal effort on tired legs is a skill. |
+| When the FTP changes | Reset the power of the prior work, and note it. | Otherwise the work becomes relatively easier and looks like better durability. |
+
+Two versions of the prior work have been published, as examples and not as standards:
+
+- **Steady:** a 20-min warm-up, then riding at 80 % of the fresh 20-min power until 1,000 kJ are done, before the
+  effort. More successful amateurs lost 6.5 % of their 20-min power, less successful ones 12.5 % (E05, 14 riders).
+- **Hard:** 5 × 8 min at 105–110 % of critical power (E06, 10 professionals). It tests resistance to hard efforts,
+  not to hours, and suits road-race objectives better than ultra ones.
+
+For an ultra or gran fondo, use the steady kind and scale it to the rider: a 1,000 kJ block is about 80 min for a
+rider with a 250 W FTP and close to two hours for one at 170 W. Keep whatever is chosen identical from test to test.
+
+Rules:
+
+- Never on the same day as an FTP test or any other benchmark (validator code `DURABILITY_TEST_SAME_DAY`).
+- It is a hard day, placed fresh, like every benchmark (rule 10 in `planning-rules.md`), and it replaces the week's
+  long ride. No more than once per block.
+- Without the test, the same number can be read from training: the best 20 min in the last hour of long rides
+  against the fresh best (`coaching-model.md`). That reading is less controlled, so treat a single ride as a hint.
+- A drop of more than 10 % calls for long rides with late tempo, not more intervals (`coaching-model.md`). The
+  result never changes FTP or the zones.
+
 ## Running threshold protocols
 
 | Test | Protocol | Result |
