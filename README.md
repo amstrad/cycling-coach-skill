@@ -220,7 +220,7 @@ Run `npm test` to check the skill frontmatter, every file reference, rule consis
 
 When you change a rule, update the guide and `assets/rules.json` together. Then add or adjust an example that shows the change.
 
-When a rule rests on a paper, add the paper to `references/evidence.md` and point the rule's `source` field at its row. `npm test` fails on a `source` or an in-text citation such as (E04) that has no row. `npm run check-dois` compares every row's DOI, authors, year and title with Crossref; it needs network access, so it is not part of `npm test` or CI.
+When a rule rests on a paper, add the paper to `references/evidence.md` and point the rule's `source` field at its row. `npm test` fails on a `source` or an in-text citation such as (E04) that has no row, on a row without a Read depth, and on a rule whose `source` is a row read only as an abstract. `npm run check-dois` compares every row's DOI, authors, year and title with Crossref; it needs network access, so it is not part of `npm test` or CI.
 
 To release, bump `version` in `package.json` and add a `CHANGELOG.md` entry. Then push a matching `vX.Y.Z` tag. The release workflow tests, packages, and publishes `cycling-coach-skill.skill` as a GitHub release.
 

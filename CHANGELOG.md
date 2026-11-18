@@ -7,8 +7,8 @@ Notable changes are recorded here. The format follows [Keep a Changelog](https:/
 ### Evidence
 
 - New `references/masters.md` for athletes of 40 and over: what declines with age and why, the recovery studies in master and young cyclists, the open question on protein, and what the strength meta-analysis does and does not show. It changes no rule.
-- `references/evidence.md`: rows E18–E26 (masters) and E27–E32 (heat training), a **Read** column that says whether the full text or only the abstract was read, a table of coach heuristics with no direct evidence, and links for the coaching-practice sources (one is tagged unverified, no URL).
-- `heat-training.md`: the standing of each rule, as supported, coach heuristic, or conservative safety rule. No stop rule is loosened.
+- `references/evidence.md`: rows E18–E26 (masters) and E27–E32 (heat training), a **Read depth** column (`Full text`, `Abstract only`, `Not read`) that `npm test` enforces: a rule in `rules.json` may only cite a row read in full, and so must every rule `heat-training.md` calls supported, a table of coach heuristics with no direct evidence, and a status for each coaching-practice source that keeps "read", "URL located, content not verified" and "unverified, no URL" apart.
+- `heat-training.md`: the standing of each rule, as supported, coach heuristic, or conservative safety rule. Every number is either backed by a paper read in full or labelled. No stop rule is loosened.
 - `testing-and-zones.md`: the cycling heart-rate bands are documented as a convention (Coggan's levels) and not an evidence-based threshold, with an audit of every place "Z2" appears.
 - Labelled as coach heuristics where they appear: the age-based spacing and limits (`planning-rules.md`, `coaching-model.md`), strength twice a week from 50 (`gym-catalog.md`), the indoor block caps (`interval-catalog.md`), and in `ultra-distance.md` the 90 % Z2 share, pacing as a share of FTP, and 45–60 g/h for efforts of 12 h and more.
 

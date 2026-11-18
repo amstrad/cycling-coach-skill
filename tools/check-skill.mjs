@@ -104,7 +104,38 @@ let sources = 0;
 for (const m of [...readdirSync(join(ROOT, 'references'))].flatMap((f) => [...readFileSync(join(ROOT, 'references', f), 'utf8').matchAll(/\((E\d{2})(?:[,–-] ?(E\d{2}))*\)/g)].flatMap((x) => x[0].match(/E\d{2}/g).map((id) => [f, id])))) {
   if (!evidenceIds.has(m[1])) fail(`references/${m[0]} cites ${m[1]}, which is not a row of references/evidence.md`);
 }
-ok(`evidence (${evidenceIds.size} rows, ${sources} rule sources)`);
+// 3a-bis. Read depth: every row declares it, and an abstract-only row may not back a numeric rule
+const readDepth = new Map();
+for (const line of evidence.split('\n')) {
+  const m = line.match(/^\| (E\d{2}) \| /);
+  if (!m) continue;
+  const depth = line.split(' | ')[3];
+  if (!['Full text', 'Abstract only', 'Not read'].includes(depth)) fail(`evidence.md ${m[1]} has Read depth "${depth}"; use Full text, Abstract only or Not read`);
+  readDepth.set(m[1], depth);
+}
+(function walk(node, path) {
+  if (!node || typeof node !== 'object') return;
+  for (const [k, v] of Object.entries(node)) {
+    if (k === 'source') {
+      const id = (String(v).match(/#(E\d{2})$/) || [])[1];
+      if (id && readDepth.get(id) !== 'Full text') fail(`rules.json ${path}.source points at ${id}, which is "${readDepth.get(id)}"; a rule needs a Full text row`);
+    } else walk(v, `${path}.${k}`);
+  }
+})(rules, 'rules');
+let supported = 0;
+for (const line of readFileSync(join(ROOT, 'references/heat-training.md'), 'utf8').split('\n')) {
+  const cells = line.split(' | ');
+  if (cells.length < 3 || !/^\*\*Supported/.test(cells[1])) continue;
+  supported++;
+  const ids = line.match(/E\d{2}/g) || [];
+  if (!ids.some((id) => readDepth.get(id) === 'Full text')) fail(`heat-training.md calls "${cells[0].replace(/^\| /, '')}" supported without citing a Full text row`);
+}
+for (const guide of readdirSync(join(ROOT, 'references')).filter((f) => f !== 'evidence.md')) {
+  for (const id of new Set(readFileSync(join(ROOT, 'references', guide), 'utf8').match(/E\d{2}/g) || [])) {
+    if (readDepth.get(id) === 'Not read') fail(`references/${guide} cites ${id}, which was not read`);
+  }
+}
+ok(`evidence (${evidenceIds.size} rows, ${sources} rule sources, ${[...readDepth.values()].filter((d) => d === 'Full text').length} read in full, ${supported} supported heat rules checked)`);
 
 // 3b. Strava tag table only uses known pattern ids
 const strava = readFileSync(join(ROOT, 'references/strava-sync.md'), 'utf8');
