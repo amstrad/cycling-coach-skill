@@ -16,7 +16,7 @@ Distance decides first. The duration test exists for what distance misses, such 
 Sources:
 - Race Ready Cycling Training, "Training for ultra-distance cycling" (unverified, no URL).
 - The TrainerRoad forum thread ["Ultra-endurance training"](https://www.trainerroad.com/forum/t/ultra-endurance-training/73495)
-  (2022), a consensus of experienced ultra riders.
+  (2022), a consensus of experienced ultra riders (URL located, content not verified).
 - The general principles already in `periodization.md`, `coaching-model.md` and `fuelling.md`.
 
 The numbers marked *heuristic* are common coaching practice, not taken from those sources. Treat them as
@@ -137,8 +137,8 @@ pacing plan, not time lost.
 
 - **By duration:** up to about 8 h, 60–90 g of carbohydrate an hour from the first hour. From about 12 h and in
   24 h or multi-day events, **45–60 g an hour, aiming for 60** (about 0.5–1.0 g per kg an hour, set by heart
-  rate, gut comfort and conditions), little and often. *Coach heuristic, no direct evidence.* The 45–60 g/h comes from the
-  coaching sources listed below. It falls inside the intakes that field studies report (see the table below), but
+  rate, gut comfort and conditions), little and often. *Coach heuristic, no direct evidence.* The 45–60 g/h is attributed to the
+  coaching sources listed below, but none of the pages that could be read gives that figure. It falls inside the intakes that field studies report (see the table below), but
   those describe what athletes ate, not what was tested as best.
 - **Fast and slow carbohydrate together:** about half simple (drink mix, sipped steadily, is the background supply)
   and half complex, so glucose reaches the blood both quickly and steadily. Train the gut to absorb both on the
@@ -174,13 +174,17 @@ pacing plan, not time lost.
   the longest events).
 - Practise refuelling from shops and petrol stations, as in the race.
 - Fluids and sodium follow heat and sweat rate. Plan the night-time cold and the reduced appetite.
-- Sources (coaching sites, not peer-reviewed; the links were located by search and their content was not
-  re-checked): Uphill Athlete, ["Fat adaptation"](https://uphillathlete.com/nutrition/fat-adaptation/) (advises
-  against fasted and low-carb training, particularly for women); BarrUltra,
-  ["What does an ultra-endurance cyclist eat?"](https://barrultra.com/news/what-does-an-ultra-endurance-cyclist-eat/);
-  WUCA, ["Meeting Calorific Requirements"](https://ultracycling.com/meeting-calorific-requirements/) (Barr and
-  Hughes); Cyclite,
-  [ultra-distance nutrition guide](https://cyclite.cc/en/blogs/bikepacking-stories/the-ultimate-guide-to-fueling-for-bikepacking-events-and-races).
+- Sources (coaching sites, not peer-reviewed; a link is not a confirmation, and the status of each is in
+  `evidence.md`):
+  - Uphill Athlete, ["Fat adaptation"](https://uphillathlete.com/nutrition/fat-adaptation/) (advises against
+    fasted and low-carb training, particularly for women). Read, supports the guide.
+  - BarrUltra, ["What does an ultra-endurance cyclist eat?"](https://barrultra.com/news/what-does-an-ultra-endurance-cyclist-eat/).
+    Read, supports the guide in part: the per-kg range, the simple and complex blend, the top-ups and the meal
+    before sleep, but not "45–60 g an hour".
+  - WUCA, ["Meeting Calorific Requirements"](https://ultracycling.com/meeting-calorific-requirements/) (Barr and
+    Hughes). URL located, content not verified.
+  - Cyclite, [ultra-distance nutrition guide](https://cyclite.cc/en/blogs/bikepacking-stories/the-ultimate-guide-to-fueling-for-bikepacking-events-and-races).
+    Read, supports only the refuelling from shops; it recommends 60–90 g an hour.
 
 ## Strength and self-care
 

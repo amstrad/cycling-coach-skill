@@ -5,8 +5,9 @@ age rules are coaching practice with no study behind them. The rules themselves 
 `coaching-model.md` and `assets/rules.json`; this guide does not change a number.
 
 Citations such as (E18) point at rows of `evidence.md`. Most of the studies are small, and almost all of them
-tested well-trained cyclists with a mean age of 45–56. **No study cited here tested athletes over 60**, so
-everything the skill does for that band is extrapolated.
+tested well-trained athletes with a mean age of 45–56. **Over 60 the evidence is almost empty**: one study of
+recovery after a strength session in athletes of about 66 (reported in E19), and no study of recovery from
+cycling. What the skill does for that band is extrapolated.
 
 ## What declines, and why
 
@@ -14,15 +15,24 @@ everything the skill does for that band is extrapolated.
   until 50–60, and falls more steeply after that (E18).
 - **VO2max is the main driver.** It falls by about 10 % a decade in sedentary adults, and trained athletes do not
   escape that rate when it is counted as a share of their own starting value. The power at lactate threshold falls
-  with it. Economy does not change with age in trained adults (E18).
+  with it. One review reports that economy does not change with age in trained adults (E18); another reports a
+  study in which cycling efficiency was about 7 % lower in triathletes in their fifties than in their twenties
+  (E19). Treat economy as probably stable, not as settled.
 - **Much of the decline follows the training, not the calendar.** The fall in performance and VO2max goes most
   closely with doing less, and less intense, training as the years pass, for reasons that are often practical:
   work, family, injuries, changing goals (E18). A review of masters athletes reaches the same reading: the effect
   of age itself may be smaller than assumed, and inactivity may explain more of it (E19).
+- **Training slows the decline; it does not stop it.** In a study of triathletes who reported the same weekly
+  volume at every age, VO2max was about 17 % lower in the fifties and about 37 % lower over 70 than in the
+  twenties. In masters cyclists and triathletes of 35–64, short-duration power fell by about 8 % a decade while
+  aerobic capacity fell by about 2 % (both as reported in E19). The top end goes first, even in athletes who
+  keep riding.
 - **Fast-twitch fibres: the common claim needs care.** The loss of type II fibres is well documented in sedentary
   older adults. In athletes who kept training hard it is small or absent, and their fibre mix resembles that of
-  younger athletes of the same level (E18). So the honest statement is "fast-twitch fibres are lost when they are
-  not used", not "they are lost with age".
+  younger athletes of the same level (E18). Masters sprinters still had smaller type II fibres than young
+  sprinters, though better preserved than in sedentary people, and adding strength work to sprint training made
+  them larger again (as reported in E19). So the honest statement is "fast-twitch fibres shrink with age, much
+  less when they are used, and they respond to training at any age", not "they are lost with age".
 
 **What this supports:** keeping intensity in the week at every age, which the skill already does (one HI session a
 week in every age band). **What it does not show:** that intensity prevents the decline. The link is an
@@ -34,7 +44,7 @@ association in reviews, not a trial.
 |---|---|---|
 | 40–49 | The modest-decline phase (E18). The recovery studies below sit mostly here and in the 50s, and found no slower physical recovery. | No back-to-back hard days, HI reps cut by about 20 %, 2 hard days a week. **Coach heuristic.** No study shows these athletes need them. |
 | 50–59 | Decline begins to steepen somewhere in this decade or the next (E18). Recovery after cycling intervals was the same as in 26-year-olds at a mean age of 56 (E22). | Three days from an HI session to the next hard day, 2:1 blocks, strength twice a week, longer taper. **Coach heuristic.** |
-| 60+ | Steeper decline (E18). **No recovery, strength or protein study cited here included this band.** | Three days between any two hard days, long rides capped at 2.5–3 h, 1–2 hard days. **Coach heuristic, extrapolated from younger masters.** Apply it, and say plainly that it is caution, not evidence. |
+| 60+ | Steeper decline (E18). The only recovery study in this band followed a strength session, not riding (E19). **No cycling-recovery, strength-training or protein study cited here included this band.** | Three days between any two hard days, long rides capped at 2.5–3 h, 1–2 hard days. **Coach heuristic, extrapolated from younger masters.** Apply it, and say plainly that it is caution, not evidence. |
 
 ## Recovery
 
@@ -50,10 +60,18 @@ they point the other way for cycling:
   the older group (E22).
 - **Within a session.** Athletes of about 47 and about 25, matched for fitness, recovered alike between repeated
   30-s all-out efforts (E23).
-- **Where age may matter.** A review argues that masters athletes recover more slowly after exercise that damages
-  muscle, which in endurance sport mostly means running and above all downhill running, and not after exercise
-  that does not (E25). A second review concludes that an age effect on recovery may exist but that the research is
-  too thin to say (E19).
+- **Where age does seem to matter: muscle damage.** The review of this literature concludes that recovery is not
+  affected by age unless the exercise damages muscle, and that it is then the nerve-and-muscle function that
+  comes back late (E19). The studies it describes:
+  - after a 55 km trail run, runners of about 46 took 48 h to recover their strength where runners of about 30
+    took 24 h, and some muscle properties had not returned after 72 h;
+  - the day after an Olympic-distance triathlon, the speed at the second threshold was down by about 8 % in
+    triathletes of about 52 and by about 2.5 % in those of about 28;
+  - after a hard leg-press session, endurance athletes of about 66 lost muscle twitch force that athletes of
+    about 25 did not.
+
+  A second review makes the same distinction between damaging and non-damaging exercise (E25). All three studies
+  are small, and the review itself says the research is too thin to state an age effect with confidence (E19).
 
 What to do with this:
 
@@ -61,8 +79,8 @@ What to do with this:
   reps (`planning-rules.md` rule 3 and the age table, `coaching-model.md`, `assets/rules.json` `age`) have no
   direct support for cycling. They stay as conservative defaults, because the studies are small, cover only
   well-trained riders up to their fifties, and last at most three days, where a training block lasts weeks.
-- **The running rules have indirect support.** Extra spacing after long or hard runs fits the muscle-damage
-  argument (E25). It is still an inference, not a tested rule.
+- **The running rules have indirect support.** Extra spacing after long or hard runs, races, and heavy gym work
+  fits the muscle-damage findings (E19, E25). The size of the spacing is still the skill's, not a tested figure.
 - **Perceived recovery is a signal with a known bias.** An older athlete who feels unrecovered may perform
   normally. Do not ignore the report: it still counts in the push/hold table and it decides whether the athlete
   keeps training at all. But check it against what they did. When soreness is high and the last key session was
@@ -96,6 +114,9 @@ referred to a sports dietitian. Never tie protein to a body-weight goal.
 - **What it does not show.** The riders' mean age was about 31. One study of 16 riders used masters cyclists. No
   result is reported for older riders as a group, and nothing in it concerns bone density, injury, or the
   preservation of muscle with age. Claims that it proves strength work is more important after 40 go beyond it.
+- **One small study in masters cyclists.** After three weeks of strength training, cyclists of about 51 gained
+  strength at least as much as cyclists of about 26, and their cycling efficiency improved (as reported in E19).
+  It suggests that older riders respond to strength work; it is one short study.
 - **So:** strength training is supported for cyclists in general, and it is a sound choice for masters athletes
   by extension. The skill's "twice a week from 50" (`planning-rules.md` age table, `gym-catalog.md`) is a **coach
   heuristic**. The exercises, loads and placement are in `gym-catalog.md`; placement follows rule 6.
@@ -103,7 +124,8 @@ referred to a sports dietitian. Never tie protein to a body-weight goal.
 ## Outside this skill
 
 Age raises risks that training advice cannot assess: cardiovascular disease, bone health, and injuries that do not
-heal as they did. The skill does not screen for them. A medical check before starting or intensifying training,
+heal as they did. Masters runners report more soft-tissue injuries than younger runners, although they also ran
+more in the survey that found it (as reported in E19). The skill does not screen for them. A medical check before starting or intensifying training,
 and whenever a symptom appears, is the athlete's responsibility. Say so once at setup for athletes of 40 and over,
 and again whenever the rules in `planning-rules.md` (rule 11) or the red flags in `fuelling.md` apply. Chest pain,
 palpitations, fainting or unusual breathlessness stop the session and go to a physician.
