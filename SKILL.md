@@ -28,7 +28,7 @@ Turn a short exchange into a training week an athlete can act on: a seven-day ma
 | `references/coaching-model.md` | The principles: easy-heavy week, blocks, age spacing, session shapes. |
 | `references/hill-climb.md` | Hill climb races (one timed climb, 3–20 min): duration decides the limiter, VO2max and race-duration efforts, threshold maintenance, weight, warm-up and pacing. |
 | `references/heat-training.md` | Heat sessions with a core-temperature sensor: the block then maintenance, who and when, the core zone, the stops, the drink. |
-| `references/ultra-distance.md` | Ultra events (8 h+, 12/24 h, bikepacking races): durability, intensity split, long rides and back-to-backs, race simulation, taper, pacing, fuelling. |
+| `references/ultra-distance.md` | Ultra events (350 km or more, 20 h or more in one push, multi-day and bikepacking races) and what a long gran fondo borrows from them: durability, intensity split, long rides and back-to-backs, race simulation, taper, pacing, fuelling. |
 | `references/planning-rules.md` | Hard constraints, sequencing, the push/hold decision, age and level tables, validator codes. |
 | `references/interval-catalog.md`, `references/running-catalog.md` | Sessions, rotation per block, progression steps. |
 | `references/running-model.md` | Running zones, weekly structures per distance, runner-specific rules. |
@@ -89,7 +89,7 @@ If FTP figures disagree by more than 3 %, say so and ask which to trust. Summari
 - **Level:** `level`, else derive it with `references/athlete-levels.md`.
 - **Phase, block, and week type:** from `eventDate` and `trainingState` with `references/periodization.md`, or from `trainingState.seasonPlan` when one exists.
 - **Anchors:** apply the update rules in `references/testing-and-zones.md`, and check whether a benchmark is due.
-- **Event guide:** for a single timed climb read `references/hill-climb.md`; for an event of 8 h or more read `references/ultra-distance.md`. When the athlete asks why, give the reason and its evidence level from `references/evidence.md`, and never present a weak finding as settled.
+- **Event guide:** for a single timed climb read `references/hill-climb.md`; for an ultra (350 km or more, 20 h or more in one push, or multi-day) read `references/ultra-distance.md`, and for a gran fondo of 8 h or more read its durability, pacing and fuelling sections. When the athlete asks why, give the reason and its evidence level from `references/evidence.md`, and never present a weak finding as settled.
 - **Progression:** push, hold, or step down with the decision table in `references/planning-rules.md`.
 
 State the result in at most two lines: profile and focus; level, phase, week type, and whether the progression moves.

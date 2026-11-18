@@ -28,7 +28,7 @@ Typical ratios for a trained rider: 5 s ≈ 3.0–4.5 × FTP, 1 min ≈ 1.5–2.
 - Fast group ride or road race with late surges: lean on threshold and aerobic ceiling for everyone, and add repeated efforts for steady riders.
 - Climbing or gran fondo: lean on FTP and W/kg (sub-threshold, threshold, long tempo); keep body-weight context in view.
 - Hill climb (one timed climb): the climb's duration decides — under 10 min VO2max-first with race-duration efforts, over 10 min threshold-first (`hill-climb.md`).
-- Ultra-distance (8 h+, 12/24 h, bikepacking): durability first — Z2 volume, long rides and back-to-backs, sweet spot and tempo, a short VO2max touch (`ultra-distance.md`).
+- Ultra-distance (350 km or more, 20 h or more in one push, multi-day, bikepacking): durability first — Z2 volume, long rides and back-to-backs, sweet spot and tempo, a short VO2max touch (`ultra-distance.md`).
 - Criterium or track: lean on repeated anaerobic and neuromuscular work.
 - Time trial: lean on threshold and FTP, in the sustained position.
 

@@ -2,6 +2,13 @@
 
 Notable changes are recorded here. The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions follow [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Changed
+
+- `ultra-distance.md`: an ultra is now an event of 350 km or more, of 20 h or more in one push, or a multi-day event (was 8 h or more). Shorter events, including 200–300 km gran fondos and a 300 km brevet, are planned as gran fondos; from 8 h they borrow the guide's durability, pacing and fuelling. `SKILL.md`, `periodization.md` and `power-profiles.md` follow.
+- `README.md`: describes the event guides, the evidence table, and the new validator checks.
+
 ## [1.1.0] - 2026-11-18
 
 ### Coaching knowledge (`references/`)

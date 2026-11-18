@@ -69,7 +69,7 @@ Under 8 weeks to go with no prior base: skip Base, run a short Build at the ride
 | Road race, gran fondo < 4 h, half marathon | 10–14 days | −40–50 % | keep | −20 % |
 | Gran fondo > 4 h, marathon, ultra | 14–21 days | −50–60 % by the final week | keep but shorter | −20–30 % |
 
-For ultra events (8 h or more), see `ultra-distance.md`. It covers the race simulation about 3 weeks out, and the last intervals 3–4 days before the start.
+For ultra events (350 km or more, 20 h or more in one push, or multi-day), see `ultra-distance.md`. A shorter event is still a gran fondo, a 300 km brevet included; from 8 h it borrows that guide's durability, pacing and fuelling. It covers the race simulation about 3 weeks out, and the last intervals 3–4 days before the start.
 
 Age 50+ adds 3–4 days. Beginners taper on the short end: they lose fitness faster and carry less fatigue.
 

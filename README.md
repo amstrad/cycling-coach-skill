@@ -31,7 +31,7 @@ The main rules include:
 Beyond the standard week, it has dedicated guidance for:
 
 - **Hill climbs** (one timed climb): training by the climb's duration, testing on the gradient, and pacing with critical power and W′.
-- **Ultra-distance events** (8 h or more, 12 and 24 h races, bikepacking): durability, long rides and back-to-backs, pacing, sleep in multi-day events, and fuelling by hours of effort.
+- **Ultra-distance events** (350 km or more, 20 h or more in one push, multi-day and bikepacking; a 200–300 km gran fondo or brevet is not an ultra): durability, long rides and back-to-backs, pacing, sleep in multi-day events, and fuelling by hours of effort.
 - **Heat training** for riders with a core-temperature sensor.
 - An optional **durability test**: 20-min power after a fixed block of work, against the fresh value.
 
@@ -189,7 +189,7 @@ A session may carry an optional `carbGPerHour`. Above 90 g/h the validator warns
 | `coaching-model.md` | Limiters, the easy-heavy week, blocks, recovery by age, and session shapes. |
 | `power-profiles.md` | Explosive, balanced, or steady from the power curve. |
 | `hill-climb.md` | Hill climb races: training by climb duration, W/kg and mass scaling, testing on the gradient, race-duration efforts, warm-up, and pacing with critical power and W′. |
-| `ultra-distance.md` | Ultra events of 8 h or more: durability, long rides, race simulation, pacing, sleep in multi-day events, and fuelling by hours of effort. |
+| `ultra-distance.md` | Ultra events (350 km or more, 20 h or more, or multi-day): durability, long rides, race simulation, pacing, sleep in multi-day events, and fuelling by hours of effort. |
 | `heat-training.md` | Heat sessions for riders with a core-temperature sensor. |
 | `interval-catalog.md` | Cycling sessions, per-block rotation, and progression steps. |
 | `running-model.md` | Running zones, weekly structures for 5k to marathon, and runner-specific rules. |

@@ -1,8 +1,17 @@
-# Ultra-distance cycling — 12/24 h events, 300 km+ brevets, bikepacking races
+# Ultra-distance cycling — 350 km and more, 24 h races, bikepacking races
 
-Use this guide when the objective takes **8 hours or more** in one push (long brevets, 12 h and 24 h races,
-Everesting-style days), or several self-supported days (bikepacking races). Below 8 h, use the gran fondo
-guidance in `periodization.md` and `power-profiles.md`.
+Use this guide when the objective is **350 km or more**, takes **20 hours or more** in one push, or runs over
+**several days** with riding through the night or sleep stops: brevets of 400 km and more, 24 h races,
+bikepacking races.
+
+**A long gran fondo is not an ultra.** Events of 200–300 km such as Mallorca 312, La Marmotte or the
+Quebrantahuesos take most riders 6–13 hours and are ridden in one day. A 300 km brevet is a gran fondo too, even
+for a rider who needs 15 hours. Plan them as a gran fondo with `periodization.md` and `power-profiles.md`. For the
+ones that take a rider 8 hours or more, borrow three parts of this guide: Durability, Pacing and Fuelling. Leave
+out what belongs to an ultra: the sleep strategy, the race simulation at half the event's duration, the 10–20 h
+weeks, and the back-to-back weekends as a standing feature.
+
+Distance decides first. The duration test exists for what distance misses, such as a 24 h race on a short loop.
 
 Sources:
 - Race Ready Cycling Training, "Training for ultra-distance cycling".
@@ -180,7 +189,9 @@ pacing plan, not time lost.
 
 ## For a planning engine
 
-- **Classify as ultra** when the estimated duration is ≥ 8 h or the event type is ultra-distance or bikepacking.
+- **Classify as ultra** when the distance is ≥ 350 km, the estimated duration is ≥ 20 h, the event runs over
+  several days, or the event type is ultra-distance or bikepacking. Anything shorter is a gran fondo, however
+  long the day; from 8 h it takes this guide's durability, pacing and fuelling.
 - **Key sessions:** sweet spot or tempo as key 1; a short VO2max session every week (advanced) or every 2nd week
   (others) as key 2; the long ride as the week's main session.
 - **Long ride:** grows toward 5–10 h (bounded by availability). Back-to-back weekends from build on. One race
