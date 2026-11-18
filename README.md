@@ -28,6 +28,15 @@ The main rules include:
 - running distance ramps, long-run share, and impact limits
 - illness and low-readiness overrides
 
+Beyond the standard week, it has dedicated guidance for:
+
+- **Hill climbs** (one timed climb): training by the climb's duration, testing on the gradient, and pacing with critical power and W′.
+- **Ultra-distance events** (8 h or more, 12 and 24 h races, bikepacking): durability, long rides and back-to-backs, pacing, sleep in multi-day events, and fuelling by hours of effort.
+- **Heat training** for riders with a core-temperature sensor.
+- An optional **durability test**: 20-min power after a fixed block of work, against the fresh value.
+
+The guides cite their sources. `references/evidence.md` lists each paper with what it found and how strong the evidence is, so the skill can say when a recommendation rests on a systematic review and when on a small study.
+
 ## Install
 
 Download `cycling-coach-skill.skill` from the [latest release](https://github.com/amstrad/cycling-coach-skill/releases/latest). It is a zip archive with one `cycling-coach-skill/` folder inside. The folder name must stay as it is, because it has to match the skill's name.
@@ -103,7 +112,7 @@ Invoke it by name where the agent supports slash commands, or just ask:
 /cycling-coach-skill
 ```
 
-> "Map my week." · "Plan my 10k week." · "I missed Tuesday's intervals, fix the rest of the week." · "Plan the weeks to my gran fondo on 16 May."
+> "Map my week." · "Plan my 10k week." · "I missed Tuesday's intervals, fix the rest of the week." · "Plan the weeks to my gran fondo on 16 May." · "Prepare me for a 6-minute hill climb." · "Build toward a 24 h race in July."
 
 Requests in other languages work too. Schedules come back in the language and units saved in the profile.
 
@@ -144,11 +153,11 @@ The skill's knowledge is split into prose for agents and data for code. Both des
 
 | Path | Contents |
 |---|---|
-| `assets/rules.json` | Every planning number: session classes and load estimates, rotation tables, progression steps, age and level limits, load and ramp caps, running caps, tapers, phases, zones, indoor block caps, the heat protocol, and the power-profile pyramid. |
+| `assets/rules.json` | Every planning number: session classes and load estimates, rotation tables, progression steps, age and level limits, load and ramp caps, running caps, tapers, phases, zones, indoor block caps, the heat protocol, the power-profile pyramid, and the durability-test and fuelling checks. A rule that rests on a paper carries a `source` pointing at its row in `references/evidence.md`. |
 | `assets/athlete-profile.schema.json` | JSON Schema for the athlete profile. |
 | `assets/week-plan.schema.json` | JSON Schema for a structured week plan. |
 | `scripts/validate-week.mjs` | A dependency-free validator that checks a week plan against `rules.json` and reports stable error codes. |
-| `examples/` | Four athlete profiles with valid weeks, plus broken weeks that must fail with specific codes. |
+| `examples/` | Four athlete profiles with valid weeks, plus broken weeks that must fail with specific codes and raise specific warnings. |
 
 Validate a plan from the command line:
 
@@ -167,6 +176,8 @@ const { errors, warnings, summary } = validatePlan(plan, profile, loadRules());
 
 Exit code 0 means no errors, 1 means rule errors, and 2 means unreadable input. The error codes and the rules they enforce are listed at the end of `references/planning-rules.md`.
 
+A session may carry an optional `carbGPerHour`. Above 90 g/h the validator warns (`CARB_ABOVE_EVIDENCE`), because benefit beyond that is not established. A `durability-test` on the same day as another benchmark is an error (`DURABILITY_TEST_SAME_DAY`).
+
 ## The guides
 
 | Guide | Contents |
@@ -177,8 +188,8 @@ Exit code 0 means no errors, 1 means rule errors, and 2 means unreadable input. 
 | `season-plan.md` | Multi-week outlines and re-planning. |
 | `coaching-model.md` | Limiters, the easy-heavy week, blocks, recovery by age, and session shapes. |
 | `power-profiles.md` | Explosive, balanced, or steady from the power curve. |
-| `hill-climb.md` | Hill climb races: training by climb duration, race-duration efforts, warm-up, and pacing. |
-| `ultra-distance.md` | Ultra events of 8 h or more: durability, long rides, race simulation, pacing, and fuelling. |
+| `hill-climb.md` | Hill climb races: training by climb duration, W/kg and mass scaling, testing on the gradient, race-duration efforts, warm-up, and pacing with critical power and W′. |
+| `ultra-distance.md` | Ultra events of 8 h or more: durability, long rides, race simulation, pacing, sleep in multi-day events, and fuelling by hours of effort. |
 | `heat-training.md` | Heat sessions for riders with a core-temperature sensor. |
 | `interval-catalog.md` | Cycling sessions, per-block rotation, and progression steps. |
 | `running-model.md` | Running zones, weekly structures for 5k to marathon, and runner-specific rules. |
@@ -186,7 +197,7 @@ Exit code 0 means no errors, 1 means rule errors, and 2 means unreadable input. 
 | `gym-catalog.md` | Strength, core, and running-resilience work. |
 | `adjustments.md` | Session scoring and repairing a week after missed or failed sessions. |
 | `testing-and-zones.md` | FTP and threshold-pace tests, zones, rules for updating them automatically, and an optional durability test. |
-| `fuelling.md` | Fuelling and recovery cues, plus red flags. |
+| `fuelling.md` | Fuelling and recovery cues, plus red flags. Ranges are starting points to practise, not prescriptions. |
 | `evidence.md` | The papers behind the guides: reference, finding, evidence level, link, and where each is applied. |
 | `intervals-icu.md`, `strava-sync.md`, `garmin-snapshot.md` | The data sources. |
 | `profile-schema.md`, `first-time-setup.md` | Profile fields and setup questions. |
